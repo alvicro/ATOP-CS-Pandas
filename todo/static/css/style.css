@@ -1,0 +1,10 @@
+table {
+    background-color: lightblue;
+}
+tr.todo {
+  background-color: pink
+}
+tr.done {
+	background-color: green
+}
+

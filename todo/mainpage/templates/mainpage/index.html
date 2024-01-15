@@ -1,0 +1,19 @@
+{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}" >
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<script src="{% static 'js/sc.js' %}"> </script>
+<h1>Список дел на сегодня</h1>
+<table border="1">
+{% for t in moi_dela %}
+	{% if t.done %}
+    <tr class='done'>
+	{% else %}
+	<tr class='todo'>
+	{% endif %}
+	<th>{{t.description}}</th>
+	<td>сделать до</td>
+	<td>{{t.end}}</td>
+	</tr>
+{% endfor %}
+</table>
+<input type='button' onclick='cry()' value='Кричать' />

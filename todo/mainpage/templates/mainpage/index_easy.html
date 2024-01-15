@@ -1,0 +1,12 @@
+<link href='/static/css/style.css' rel="stylesheet">
+<script src='/static/js/sc.js'> </script>
+<style>p{
+  background-color: lightblue
+}</style>
+<h1>Список дел на сегодня</h1>
+<table border="1">
+{% for t in moi_dela %}
+    <tr><th>{{t.description}}</th><td>сделать до</td><td>{{t.end}}</td></tr>
+{% endfor %}
+</table>
+<input type='button' onclick='cry()' value='Кричать' />
