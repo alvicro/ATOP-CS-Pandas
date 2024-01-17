@@ -45,7 +45,7 @@ def diplay_xls(request):
     plt.savefig(img_path)
     return render(
         request,
-        'water/index.html',
+        'groundwater_levels/index.html',
         {
             'plotsrc': img_name  # работать не будет!
         }

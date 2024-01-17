@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class WaterConfig(AppConfig):
+class Groundwater_levelsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'water'
+    name = 'groundwater_levels'
