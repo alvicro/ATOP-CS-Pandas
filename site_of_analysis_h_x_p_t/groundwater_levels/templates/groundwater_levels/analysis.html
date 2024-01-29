@@ -1,0 +1,20 @@
+{% load static %}
+<form action="/draw/" method="post">
+    {% csrf_token %}
+    Ось 1
+    <select name="ax1">
+        <option value="h">Уровень грунтовых вод</option>
+        <option value="p">Давление</option>
+        <option value="x">Осадки</option>
+        <option value="t">Температура воздуха</option>
+    </select>
+Ось 2
+<select name="ax2">
+    <option value="h">Уровень грунтовых вод</option>
+    <option value="p">Давление</option>
+    <option value="x">Осадки</option>
+    <option value="t">Температура воздуха</option>
+</select>
+<input type="submit" value="Нарисовать">
+</form>
+<img src="{% static plotsrc %}" alt='Тут будет график'>

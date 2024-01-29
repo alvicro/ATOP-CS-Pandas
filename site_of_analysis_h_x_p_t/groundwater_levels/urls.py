@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import diplay_xls
+from .views import display_xls, draw
 
 urlpatterns = [
-    path('', diplay_xls)
+    path('', display_xls),
+    path('draw/', draw)
 ]
