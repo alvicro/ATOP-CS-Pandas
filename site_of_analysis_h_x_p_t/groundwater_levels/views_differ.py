@@ -5,9 +5,14 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import datetime as dt
+#ONLY SIMPLE COMMENTS in order to have execi
 def diplay_xls(request):
 #%%
+#!!!!!!!
+# Simple comments in order to illustrate a procedure of COMMIT
+#!!!!!!!
 # set the path to the file
+#    xse with COMMITls_path = settings.BASE_DIR / 'static'
     xls_path = settings.BASE_DIR / 'static'
 # make an empty list for dataframes
     dfs = []
