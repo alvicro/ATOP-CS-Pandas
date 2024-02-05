@@ -1,0 +1,8 @@
+{% include "groundwater_levels/menu.html" %}
+
+<table>
+<tr><th>{{d}}</th><th>{{h}}</th></tr>
+{% for val in dh %}
+<tr><td>{{val}}</td></tr>
+{% endfor %}
+</table>

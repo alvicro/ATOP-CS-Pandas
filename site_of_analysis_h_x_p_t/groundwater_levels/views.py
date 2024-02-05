@@ -51,6 +51,18 @@ def display_xls(request):
         }
     )
 
+def groundwater_levels(request):
+    data = read_xls(settings.BASE_DIR / 'static')
+    context = {
+        'd': data['d'][0],
+        'h': data['h'][0],
+        'dh': zip(data['d'], data['h'])
+    }
+    return render(
+        request,
+        'groundwater_levels/gwlevels.html',
+        context
+    )
 
 
 def read_xls(xls_path):
@@ -72,11 +84,11 @@ def read_xls(xls_path):
     t = dataframe["Температура, гр.С"]
     dates = dataframe["Дата"]
     return {
-        'd': dates,
-        'p': "Давление, мм рт. ст.",
-        't': "Температура, гр.С", 
-        'x': "Осадки, мм",
-        'h': "Уровень грунтовых вод, см"
+        'd': ["Дата", dates],
+        'p': ["Давление, мм рт. ст.", p],
+        't': ["Температура, гр.С", t],
+        'x': ["Осадки, мм", x],
+        'h': ["Уровень грунтовых вод, см", h]
 
     }
 
@@ -92,10 +104,10 @@ def draw(request):
         fig = plt.figure(dpi = 256)
         #ax = fig.add_subplot(projection='3d')
         #ax.scatter(p, x, t, marker='o', s=1)  # 3Д
-        plt.title(data[ax2] + " от " + data[ax1])
-        plt.xlabel(data[ax1])
-        plt.ylabel(data[ax2])
-        plt.plot(ax1, ax2, marker = 'o', markersize = 3)
+        plt.title(data[ax2][0] + " от " + data[ax1][0])
+        plt.xlabel(data[ax1][0])
+        plt.ylabel(data[ax2][0])
+        plt.plot(data[ax1][1], data[ax2][1], marker = 'o', markersize = 3)
     #plt.plot(dates, h, marker = 'o', markersize = 3)
     #plt.plot(dates, t, marker = 'o', markersize = 3)
     #plt.plot(dates, x, marker = 'o', markersize = 3)
