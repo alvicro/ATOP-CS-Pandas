@@ -51,16 +51,48 @@ def display_xls(request):
         }
     )
 
-def groundwater_levels(request):
+def data_table(col='h'):
     data = read_xls(settings.BASE_DIR / 'static')
+    print(data['d'][1])
+    print(data[col][1])
+    print(zip(data['d'][1], data['h'][1]))
     context = {
         'd': data['d'][0],
-        'h': data['h'][0],
-        'dh': zip(data['d'], data['h'])
+        'c': data[col][0],
+        'dh': zip(data['d'][1], data[col][1])
     }
+    return context
+
+
+def groundwater_levels(request):
+    context = data_table('h')
     return render(
         request,
-        'groundwater_levels/gwlevels.html',
+        'groundwater_levels/datatable.html',
+        context
+    )
+
+def pressure(request):
+    context = data_table('p')
+    return render(
+        request,
+        'groundwater_levels/datatable.html',
+        context
+    )
+
+def precipitation(request):
+    context = data_table('x')
+    return render(
+        request,
+        'groundwater_levels/datatable.html',
+        context
+    )
+
+def air_temperature(request):
+    context = data_table('t')
+    return render(
+        request,
+        'groundwater_levels/datatable.html',
         context
     )
 
@@ -119,7 +151,7 @@ def draw(request):
         img_path = settings.BASE_DIR / 'static' / img_name
         plt.savefig(img_path)
         context = {
-            'plotsrc': img_name  # работать не будет!
+            'plotsrc': img_name 
         }
 
     return render(
@@ -127,6 +159,51 @@ def draw(request):
         'groundwater_levels/analysis.html',
         context
     )
+
+def hxpt(request):
+    context = {}
+    data = read_xls(settings.BASE_DIR / 'static')
+    fig = plt.figure(dpi = 256)
+    #ax = fig.add_subplot(projection='3d')
+    #ax.scatter(p, x, t, marker='o', s=1)  # 3Д
+    plt.title(data['h'][0] + " и " + data['x'][0])
+    plt.xlabel(data['h'][0])
+    plt.ylabel(data['x'][0])
+    #
+    #plt.legend([data['h'][0], data['x'][0]])
+    plt.legend(['uuu', 'l;l'])
+    
+    plt.plot(
+        data['d'][1],
+        data['h'][1],
+        marker = 'o',
+        markersize = 3,
+        label=data['h'][0],
+        color='red')
+    plt.plot(
+        data['d'][1],
+        data['x'][1],
+        markersize = 1,
+        color='green')
+    
+    #plt.plot(dates, t, marker = 'o', markersize = 3)
+    #plt.plot(p, t, marker = 'o', markersize = 3)
+    plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)
+    plt.xticks(ha = 'right', rotation = 30)
+
+    img_name = 'hxpt.png'
+    img_path = settings.BASE_DIR / 'static' / img_name
+    plt.savefig(img_path)
+    context = {
+        'plotsrc': img_name 
+    }
+
+    return render(
+        request,
+        'groundwater_levels/analysis.html',
+        context
+    )
+
 
 
 
