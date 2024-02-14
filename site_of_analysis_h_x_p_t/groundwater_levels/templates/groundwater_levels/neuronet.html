@@ -1,0 +1,2457 @@
+{% include "groundwater_levels/menu.html" %}
+
+<a href="http://kpk-nnga.sinp.msu.ru/index.php?id=nnga/"> Нейронные сети в задачах гидрологических прогнозов</a>
+
+<a href="http://kpk-nnga.sinp.msu.ru/index.php?id=nnga/">Курсы по основам нейронных сетей</a>
+
+<div class=WordSection1>
+
+    <p class=MsoNormal style='margin-bottom:33.75pt;text-indent:0cm;mso-outline-level:
+    1;background:white;vertical-align:baseline'><b><span style='font-size:28.0pt;
+    font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+    color:#275176;mso-font-kerning:18.0pt;mso-fareast-language:RU'>������
+    ����������<o:p></o:p></span></b></p>
+    
+    <p class=MsoNormal style='margin-bottom:11.25pt;text-indent:0cm;mso-outline-level:
+    3;background:white;vertical-align:baseline'><b><u><span style='font-size:19.0pt;
+    font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+    color:#275176;mso-fareast-language:RU'>����� ����������</span></u></b><b><span
+    style='font-size:19.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#275176;mso-fareast-language:RU'><o:p></o:p></span></b></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/1835629/?partner=neuroproject"><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>Mohamad <span class=SpellE><span
+         class=GramE>H.Hassoun</span></span>. Fundamentals of Artificial Neural
+         Networks. </span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>MIT <span class=SpellE>Press</span>, <span class=SpellE>Cambridge</span>,
+         <span class=SpellE>Massachusetts</span>, 1995.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/135794246/?partner=neuroproject"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>�.������</span></span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>. ��������� ����: ������ ����. 2-� ���. �., &quot;�������&quot;, 2006.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>S.Haykin</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Neural Networks and Learning Machines. </span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>3rd <span class=SpellE>Edition</span>. <span
+         class=SpellE>Pearson</span>, 2018.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.����</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>�.�.�������</span>.
+         <span class=SpellE>���������������</span> � ��� ���������� � ��������� �
+         �������. �., ����, 1998. ����������� ������ ����� ���������&nbsp;</span><span
+         style='color:windowtext'><a href="http://www.neuroproject.ru/EzSh.php"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>�����</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="https://www.ozon.ru/context/detail/id/2745295/?partner=neuroproject"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>�.�.������</span></span><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#316594;
+         mso-fareast-language:RU'>. ��������� ����. ������ � ���������. �.,
+         ������������, 2005. (������� ����� &quot;��������������� � ��
+         ����������&quot;, ���. <span class=SpellE>�.�.��������</span>. ��.18.)</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.��������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>�.�.������</span>.
+         <span class=SpellE>�����������</span> �������������. ��������. ���������.
+         ����������. ���.: ���-�� <span class=SpellE>��������</span>. ��-��, 2009.
+         ISBN 978-5-7422-2272-9<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/1025870/?partner=neuroproject"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>�.�.���������</span></span><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#316594;
+         mso-fareast-language:RU'>, <span class=SpellE>�.�.��������</span>.
+         ���������������. �., ���-�� ���� <span class=SpellE>��.�������</span>,
+         2004.</span></a></span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/5129103/?partner=neuroproject"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>�.�.��������</span></span><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#316594;
+         mso-fareast-language:RU'>. ��������� ����. ������ ������. �., �������
+         ����� - �������, 2010.</span></a></span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/1307273/?partner=neuroproject"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>�.�.�������</span></span><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#316594;
+         mso-fareast-language:RU'>. ��������� ����: ��������, ����������� �
+         ����������. �., �����, 2001.</span></a></span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.intuit.ru/department/ds/neuronnets/"><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>�.�.�������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>. ������ ������
+         ��������� �����. ��������-����������� �������������� ����������, ���-��
+         &quot;�������� �������&quot;.</span></a></span><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/1022260/?partner=neuroproject"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>�.�.�������</span></span><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#316594;
+         mso-fareast-language:RU'>, <span class=SpellE>�.�.���</span>, <span
+         class=SpellE>�.�.�������</span>. �������� ������ � ������������� ���������
+         ����. <span class=SpellE>���������</span>, 2001.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>C.C.Aggarwal</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Neural Networks and Deep Learning. A Textbook. Springer International
+         Publishing<br>
+         AG, 2018. </span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>DOI
+         10.1007/978-3-319-94463-0 ISBN 978-3-319-94462-3<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a href="https://bit.ly/1bCmE3Z"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>�.�.��������</span></span><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#316594;
+         mso-fareast-language:RU'>. �������� ��������. ���� ������.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l16 level1 lfo23;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="https://riorpub.com/en/nauka/monography/1591/view"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>�.�.�������</span></span><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#316594;
+         mso-fareast-language:RU'>. �������� ���������. ������ �� ������ ���������
+         �������� �<br>
+         �������������� ����������. �., ����, 2019. DOI: 10.29039/02011-1</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 1.1. �������� �������. ��������� �����, ��������
+    �������� ��������� ��������. ������������ ����������.</span></u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <p class=MsoNormal style='margin-left:36.0pt;text-indent:0cm;background:white;
+    vertical-align:baseline'><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+    mso-fareast-font-family:"Times New Roman";color:#333333;mso-fareast-language:
+    RU'>��. ����� ����������. <span class=SpellE><span class=GramE>��.�����</span></span>:<o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l10 level1 lfo24;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>.&nbsp;</span><span
+         style='color:windowtext'><a
+         href="http://shkolazhizni.ru/archive/0/n-10573/"><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-fareast-language:RU'>��� ����� ����� ����?</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l10 level1 lfo24;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>.&nbsp;</span><span
+         style='color:windowtext'><a href="http://cs.usu.edu.ru/study/moore/"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>����� ����</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l10 level1 lfo24;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>W.<span class=GramE>S.McCulloch</span></span></span><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>, <span class=SpellE>W,Pitts</span>. A Logical
+         Calculus of the Ideas Immanent in Nervous Activity. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Bulletin</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>of</span> <span
+         class=SpellE>Mathematical</span> <span class=SpellE>Biophysics</span>,
+         1943, V. 5, <span class=SpellE>pp</span>. 115�133.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l10 level1 lfo24;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>F.Rosenblatt</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>. The
+         Perceptron: A Probabilistic Model for Information Storage and Organization
+         in the Brain. </span><span class=SpellE><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>Psychological</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Review</span>,
+         1958, V.65, <span class=SpellE>No</span>. 6, <span class=SpellE>pp</span>.
+         386-408.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l10 level1 lfo24;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>K.Hornick</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>M.Stinchcombe</span>, <span class=SpellE>H.White</span>.
+         Multilayer Feedforward Networks are Universal <span class=SpellE>Approximators</span>.
+         </span><span class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Neural</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Networks</span>,
+         1989, v. 2, � 5, pp.359-366.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l10 level1 lfo24;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>G.Cybenko</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Approximation by <span class=SpellE>Superpositions</span> of a Sigmoidal
+         Function. </span><span class=SpellE><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>Mathematics</span></span><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'> <span class=SpellE>of</span> <span class=SpellE>Control</span>,
+         <span class=SpellE>Signals</span>. <span class=SpellE>and</span> <span
+         class=SpellE>Systems</span>, 1989, v. 2, � 4, pp.303-314.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l10 level1 lfo24;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>K.Funahashi</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>. On
+         the Approximate Realization of Continuous Mappings by Neural Networks. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Neural</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Networks</span>,
+         1989, v. 2, � 3, pp.183-191.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l10 level1 lfo24;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>��������� ����: �������
+         �������� ������. ������� ������ ��� ����� ��������� <span class=SpellE>�.�.���������</span>,
+         <span class=SpellE>�.�.�������</span>. �����, ������ 2001.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l10 level1 lfo24;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.��������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>. ��������� �������
+         ������������� <span class=SpellE>����������������</span>. � ��.: XIII
+         ������������� ������-����������� �����������
+         &quot;����������������-2011&quot;. ������ �� <span class=SpellE>����������������</span>.
+         �., ���� ����, 2010. �.44-72.<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 1.2. �������� ��������� ��������������� ������ �
+    ��� �����������. ������������ �����������. ����� ����������� ���������� ����</span></u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <p class=MsoNormal style='margin-left:36.0pt;text-indent:0cm;background:white;
+    vertical-align:baseline'><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+    mso-fareast-font-family:"Times New Roman";color:#333333;mso-fareast-language:
+    RU'>��. ����� ���������� � ���������� � ���� 1.1. <span class=SpellE><span
+    class=GramE>��.�����</span></span>:<o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l12 level1 lfo25;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>I.Sutskever</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>J.Martens</span>, <span class=SpellE>G.Dahl</span>, <span
+         class=SpellE>G.Hinton</span>. On the importance of initialization and
+         momentum in deep learning. </span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>J. <span class=SpellE>of</span> <span
+         class=SpellE>Machine</span> <span class=SpellE>Learning</span> <span
+         class=SpellE>Research</span>, 2013, V. 28, <span class=SpellE>No</span>.
+         3, <span class=SpellE>pp</span>. 1139-1147.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l12 level1 lfo25;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>D.E.Rumelhardt</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>G.E.Hinton</span>, <span class=SpellE>R.J.Williams</span>.
+         Learning Internal Representations by Error Propagation. In: Parallel
+         Distributed Processing: Explorations in the Microstructure of Cognition. </span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>V.1: <span class=SpellE>Foundations</span>.
+         1986, pp.318�362. MIT, <span class=SpellE>Cambridge</span>.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l12 level1 lfo25;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>D.E.Rumelhardt</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>G.E.Hinton</span>, <span class=SpellE>R.J.Williams</span>.
+         Learning representations by back-propagating errors. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Nature</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, 1986, V.323, pp.533-536.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l12 level1 lfo25;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>. <span class=SpellE>������������</span>
+         ������ � ���������. ����������. �., ������������, 2014.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l12 level1 lfo25;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf"><span
+         class=SpellE><span class=GramE><span lang=EN-US style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-ansi-language:EN-US;mso-fareast-language:RU'>G.Hinton</span></span></span><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>, <span class=SpellE>N.Srivastava</span>, <span
+         class=SpellE>K.Swersky</span>. Neural <span class=SpellE>Netwroks</span>
+         for Machine Learning, Lecture 6.</span></a></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l12 level1 lfo25;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.��������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>�.�.������������</span>,
+         <span class=SpellE>�.�.��������</span>. �������������� ����������� ������
+         � �������� ��������. ����� ����, 2016, �.8, � 1, �.41-91.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l12 level1 lfo25;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>N.Srivastava</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>G.Hinton</span>,
+         <span class=SpellE>A.Krizhevsky</span>, <span class=SpellE>I.Sutskever</span>,
+         <span class=SpellE>R.Salakhutdinov</span>.&nbsp;</span><span
+         style='color:windowtext'><a
+         href="https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf"><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>Dropout: A Simple Way to Prevent Neural
+         Networks from Overfitting.</span></a></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>&nbsp;</span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>J. <span class=SpellE>of</span>
+         <span class=SpellE>Machine</span> <span class=SpellE>Learning</span> <span
+         class=SpellE>Research</span>, 2014, V.15, pp.1929-1958.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l12 level1 lfo25;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://cs231n.github.io/neural-networks-3/"><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-ansi-language:EN-US;mso-fareast-language:
+         RU'>Convolutional Neural Networks for Visual Recognition.</span></a></span><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l12 level1 lfo25;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a href="http://arxiv.org/abs/1206.5533v2"><span
+         class=SpellE><span class=GramE><span lang=EN-US style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-ansi-language:EN-US;mso-fareast-language:RU'>Y.Bengio</span></span></span><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>. Practical Recommendations for
+         Gradient-Based Training of Deep Architectures. </span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>2012.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 1.3. ��������� ���� � ����� ����������.
+    ������������� ��������� ����. ��������� ���� � ����������� ��������� ���������.</span></u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l8 level1 lfo26;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Specht, D. Probabilistic Neural Networks. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Neural</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Networks</span>,
+         1990, 3, 109-118.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l8 level1 lfo26;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Specht, D. A General Regression Neural Network.
+         IEEE Trans. on Neural Networks, Nov. 1991, 2, 6, 568-576.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l8 level1 lfo26;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Burrascano</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, P.
+         Learning Vector Quantization for the Probabilistic Neural Network. </span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>IEEE <span class=SpellE>Trans</span>.
+         <span class=SpellE>on</span> <span class=SpellE>Neural</span> <span
+         class=SpellE>Networks</span>, <span class=SpellE>July</span> 1991, 2,
+         458-461.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l8 level1 lfo26;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Schieler</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, H.,
+         Hartmann, U. Mapping neural network derived from the <span class=SpellE>parzen</span>
+         window estimator. </span><span class=SpellE><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>Neural</span></span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'> <span class=SpellE>Networks</span>, 1992, V.5,
+         pp.903-909.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l8 level1 lfo26;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Specht, D. The General Regression Neural Network
+         � Rediscovered. </span><span class=SpellE><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>Neural</span></span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'> <span class=SpellE>Networks</span>, 1993, V.6,
+         pp.1033-1034.<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 1.4. ��������� ���� � ������������������ ����� <span
+    class=SpellE>��������</span>.</span></u><span style='font-size:10.5pt;
+    font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+    color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l4 level1 lfo27;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Caudill, M. The <span class=SpellE>Kohonen</span>
+         Model. </span><span class=SpellE><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";mso-fareast-language:
+         RU'>Neural</span></span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'> <span
+         class=SpellE>Network</span> <span class=SpellE>Primer</span>. AI <span
+         class=SpellE>Expert</span>, 1990, 25-31.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l4 level1 lfo27;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>P.Tavan</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>H.Grubmuller</span>, <span class=SpellE>H.Kuhnel</span>.
+         Self-organization of associative memory and pattern classification:
+         recurrent signal processing on topological feature maps. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Biological</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Cybernetics</span>,
+         64 (1990), pp.95-105.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l4 level1 lfo27;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/5040102/?partner=neuroproject"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>�.�������</span></span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>. ������������������ �����. �., &quot;�����&quot;, 2008. 656 �.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l4 level1 lfo27;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/117979/?partner=neuroproject"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>�.�����</span></span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>, <span class=SpellE>�.�������</span>. ������ ���������� ������ �
+         ������� ������������������ ����. �., &quot;�������&quot;, 2001.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoListParagraph style='text-indent:-18.0pt;mso-list:l4 level1 lfo27;
+    tab-stops:list 36.0pt;background:white;vertical-align:baseline'><![if !supportLists]><span
+    style='font-size:10.0pt;mso-bidi-font-size:10.5pt;font-family:"Arial",sans-serif;
+    mso-fareast-font-family:Arial;mso-fareast-language:RU'><span style='mso-list:
+    Ignore'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'>���� 1.5. ���������
+    ���� <span class=SpellE>��������</span>. ��������� ���� ��������. ������
+    ���������.</span></u><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+    mso-fareast-font-family:"Times New Roman";color:#333333;mso-fareast-language:
+    RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=6 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l4 level1 lfo27;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>J.J.Hopfield</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Neural networks and physical systems with emergent collective
+         computational abilities. Proceedings of National Academy of Sciences of
+         USA, 1982, V.79, No.8, pp.2554-2558.&nbsp;</span><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>����������� ������ ���������&nbsp;</span><span
+         style='color:windowtext'><a
+         href="http://www.pnas.org/content/79/8/2554.full.pdf+html"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>�����</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l4 level1 lfo27;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.����������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>�.�.������������</span>,
+         <span class=SpellE>�.�.���������</span>. ���������� ������ <span
+         class=SpellE>��������</span> � <span class=SpellE>��������������</span>
+         ������: ����� ������. ����������������-2011. XIII �������������
+         ������-����������� �����������. ������� ������� ������, �.3, �.181-190.
+         �., ���� ����, 2010.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l4 level1 lfo27;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>B.Denby</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>. The
+         Use of Neural Networks in High-<span class=SpellE>Enegry</span> Physics. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Neural</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Computation</span>,
+         v.5, 1993, <span class=SpellE>pp</span>. 505-549<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-left:22.5pt;text-indent:-18.0pt;mso-list:l9 level1 lfo6;
+    tab-stops:list 36.0pt;background:white;vertical-align:baseline'><![if !supportLists]><span
+    style='font-size:10.0pt;mso-bidi-font-size:10.5pt;font-family:Symbol;
+    mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#333333;
+    mso-fareast-language:RU'><span style='mso-list:Ignore'>�<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></span></span><![endif]><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+    mso-fareast-font-family:"Times New Roman";color:#333333;mso-fareast-language:
+    RU'>��. ����� ����� ����������<o:p></o:p></span></p>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 1.6. �������� ��������� ����. <span class=SpellE>���������</span>
+    ��������� ����</span></u><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+    mso-fareast-font-family:"Times New Roman";color:#333333;mso-fareast-language:
+    RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l21 level1 lfo7;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.�������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>. �� ������������ ������������
+         � ��������� ����� ��������� �������: ��������� �������� � ����������. �
+         ��.: ����������������-2015. XVII ������������� ������-�����������
+         ����������� � ������������� ��������. ������ �� <span class=SpellE>����������������</span>,
+         �.47-84. ���� ����, 2015.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l21 level1 lfo7;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>I.Sutskever</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>J.Martens</span>, <span class=SpellE>G.Dahl</span>, <span
+         class=SpellE>G.Hinton</span>. On the importance of initialization and
+         momentum in deep learning. </span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>J. <span class=SpellE>of</span> <span
+         class=SpellE>Machine</span> <span class=SpellE>Learning</span> <span
+         class=SpellE>Research</span>, 2013, V. 28, <span class=SpellE>No</span>.
+         3, <span class=SpellE>pp</span>. 1139�1147.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l21 level1 lfo7;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Y.Bengio</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Practical Recommendations for Gradient-Based Training of Deep Architectures.
+         https://arxiv.org/abs/1206.5533v2<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l21 level1 lfo7;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>I.Goodfellow</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>Y.Bengio</span>, <span class=SpellE>A.Courville</span>. Deep
+         Learning. MIT Press, 2016. http://www.deeplearningbook.org/<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l21 level1 lfo7;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>A.Gibson</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>J.Patterson</span>. Deep Learning. O�Reilly Media, Inc.,
+         2017. https://www.safaribooksonline.com/library/view/deep-learning/9781491924570/<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l21 level1 lfo7;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>K.He</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>X.Zhang</span>, <span class=SpellE>Sh.Ren</span>, <span
+         class=SpellE>J.Sun</span>. Deep Residual Learning for Image
+         Recognition.&nbsp;</span><span style='color:windowtext'><a
+         href="http://arxiv.org/abs/1512.03385v1"><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-fareast-language:RU'>http://arxiv.org/abs/1512.03385v1</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l21 level1 lfo7;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>L.A.Gatys</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>A.S.Ecker</span>, <span class=SpellE>M.Bethge</span>. A
+         Neural Algorithm of Artistic Style.&nbsp;</span><span style='color:windowtext'><a
+         href="http://arxiv.org/abs/1508.06576v1"><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-fareast-language:RU'>http://arxiv.org/abs/1508.06576v1</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l21 level1 lfo7;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>A.Mordvintsev</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>C.Olah</span>, <span class=SpellE>M.Tyka</span>. <span
+         class=SpellE>Inceptionism</span>: Going Deeper into Neural Networks.
+         Google Research Blog, June 17, 2015.&nbsp;</span><span style='color:windowtext'><a
+         href="http://googleresearch.blogspot.ru/2015/06/inceptionism-going-deeper-into-neural.html"><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>http://googleresearch.blogspot.ru/2015/06/inceptionism-going-deeper-into-neural.html</span></a></span><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l21 level1 lfo7;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Le</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Cun</span>
+         et.al. <span class=SpellE>Backpropagation</span> <span class=SpellE>applied</span>
+         <span class=SpellE>to</span> <span class=SpellE>handwritten</span> ZIP <span
+         class=SpellE>code</span> <span class=SpellE>recognition</span>. <span
+         class=SpellE>Neural</span> <span class=SpellE>Computation</span>, v.1,
+         n.4, 1989, pp.541-551.<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 1.7. ������������ �������������� ����</span></u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l22 level1 lfo8;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>I.J. <span class=SpellE>Goodfellow</span>, J. <span
+         class=SpellE>Pouget-Abadie</span>, M. Mirza, Bing Xu, D. <span
+         class=SpellE>Warde</span>-Farley, Sh. <span class=SpellE>Ozairy</span>, A.
+         <span class=SpellE>Courville</span>, Y. <span class=SpellE>Bengio</span>.
+         Generative Adversarial Nets. http://arxiv.org/abs/1406.2661v1<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l22 level1 lfo8;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>I.Goodfellow</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>. NIPS
+         2016 Tutorial: Generative Adversarial Networks.
+         https://arxiv.org/abs/1701.00160v4<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l22 level1 lfo8;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>D.Foster</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Generative Deep Learning: Teaching Machines to Paint, Write, Compose, and
+         Play. </span><span class=SpellE><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";mso-fareast-language:
+         RU'>O'Reilly</span></span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'> <span
+         class=SpellE>Media</span>, 2019. ISBN 1492041947.<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 2.1. ����������� � ���������� ������. �������� �
+    ���������� ������ ������� ���������. ������ ���������� ������</span></u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+    mso-fareast-font-family:"Times New Roman";color:#333333;mso-fareast-language:
+    RU'>��. ����� ����������. <span class=SpellE><span class=GramE>��.�����</span></span>:<o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l23 level1 lfo9;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Esbensen</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, K.H.,
+         Multivariate Data Analysis�In Practice, an Introduction to Multivariate
+         Data Analysis and Experimental Design, 5th ed., CAMO Software AS, 2006.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l23 level1 lfo9;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>���������� ����� �������
+         ���������.&nbsp;</span><span style='color:windowtext'><a
+         href="http://pca.narod.ru/"><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#316594;
+         mso-fareast-language:RU'>http://pca.narod.ru</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l23 level1 lfo9;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>������� ����������.&nbsp;</span><span
+         style='color:windowtext'><a
+         href="http://www.chemometrics.ru/materials/textbooks/pca.htm"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>����� �������
+         ��������� (PCA)</span></a></span><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";mso-fareast-language:
+         RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l23 level1 lfo9;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>������� ����������.&nbsp;</span><span
+         style='color:windowtext'><a
+         href="http://www.chemometrics.ru/materials/textbooks/mcr.htm"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>�����������
+         ���������� ������</span></a></span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l23 level1 lfo9;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>De Juan, Anna and <span class=SpellE>Tauler</span>,
+         Roma.&nbsp;</span><span style='color:windowtext'><a
+         href="http://dx.doi.org/10.1080/10408340600970005"><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-ansi-language:EN-US;mso-fareast-language:
+         RU'>Multivariate Curve Resolution (MCR) from 2000: Progress in Concepts and
+         Applications.</span></a></span><span lang=EN-US style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-ansi-language:EN-US;mso-fareast-language:RU'>&nbsp;</span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Critical</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Reviews</span>
+         <span class=SpellE>in</span> <span class=SpellE>Analytical</span> <span
+         class=SpellE>Chemistry</span>, 2006, V.36, No:3, pp.163-176.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l23 level1 lfo9;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Herve</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>
+         Abdi.&nbsp;</span><span style='color:windowtext'><a
+         href="http://www.utd.edu/~herve/Abdi-PLSR2007-pretty.pdf"><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>Partial Least Square Regression
+         (PLS-Regression)</span></a></span><span lang=EN-US style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-ansi-language:EN-US;mso-fareast-language:RU'>. In: Neil <span
+         class=SpellE>Salkind</span> (Ed.) Encyclopedia of Measurement and
+         Statistics. Thousand Oaks (CA): Sage, 2007.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l23 level1 lfo9;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.�����</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>�.�.�������</span>,
+         <span class=SpellE>�.�.����������</span>, <span class=SpellE>�.�.�����</span>.
+         ������������� ������ ������� ����������� �������������� ������� ����������
+         ��� <span class=SpellE>������������</span> �������������: �������� ���������
+         � � ���������� � ��������� ������� ��������� ����. ����������������-2008.
+         X ������������� ������-����������� �����������. ������� ������� ������,
+         �.2, �.216-225. �., ����, 2008.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l23 level1 lfo9;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.�����</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>�.�.�������</span>,
+         <span class=SpellE>�.�.����������</span>. �������� ������ ������������
+         ������� ��������� ��� <span class=SpellE>������������</span> ������� �����
+         ���������. ���������������: ����������, ����������, 2010, �3, �.20-32.<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 2.2. ����������� ����������� � ��������� �
+    �����������. ������ ��������� �����</span></u><span style='font-size:10.5pt;
+    font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+    color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l19 level1 lfo10;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/2805007/?partner=neuroproject"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>������ �. <span
+         class=SpellE>��������</span>. �������� � ���� � ������������ ��������.
+         ������ ������. �, <span class=SpellE>����������</span>, 2006.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l19 level1 lfo10;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/1726542/?partner=neuroproject"><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>Edgar <span class=SpellE>E.Peters</span>.
+         Chaos and Order in the Capital Markets: A New View of Cycles, Prices, and
+         Market Volatility. </span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>2nd <span class=SpellE>Edition</span>. <span class=SpellE>Wiley</span>
+         <span class=SpellE>Finance</span>, 1996.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>&nbsp;������� �������:&nbsp;<span
+         class=SpellE><a
+         href="http://www.ozon.ru/context/detail/id/947092/?partner=neuroproject"><span
+         style='color:#316594'>�.������</span><span style='color:#316594'>. ���� �
+         ������� �� ���</span><span style='color:#316594'>��� ��������. �����
+         ������������� ������ �� �����, ���� � ������������ �����. �.,
+         &quot;���&quot;, 2000.</span></a></span><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l19 level1 lfo10;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/1787700/?partner=neuroproject"><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>Edgar <span class=SpellE>E.Peters</span>.
+         Fractal Market Analysis: Applying Chaos Theory to Investment and
+         Economics. </span><span class=SpellE><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-fareast-language:RU'>Wiley</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'> <span
+         class=SpellE>Finance</span>, 1994.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>&nbsp;������� �������:&nbsp;<span
+         class=SpellE><a
+         href="http://www.ozon.ru/context/detail/id/1691158/?partner=neuroproject"><span
+         style='color:#316594'>�.������</span><span style='color:#316594'>.
+         ����������� ������ ���������� ������. ���������� ������ ����� �
+         ����������� � ���������. &quot;��������-��������&quot;, 2</span><span
+         style='color:#316594'>004.</span></a></span><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l19 level1 lfo10;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.���������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>�.�.������</span>,
+         <span class=SpellE>�.�.���������</span>. ����������� ������������ ��������
+         � ��������� ������ ����������� ��������� �����. ������� ����. �����
+         ���������� � ������������ ����������. 2004, �.3, �1, �.30-44.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l19 level1 lfo10;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>P.Cowpertwait</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>A.Metclfe</span>. Introductory Time Series with R. Springer,
+         2009. </span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>254 <span
+         class=SpellE>pp</span>.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l19 level1 lfo10;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>M Braun. Machine Learning for Time Series Data
+         Analysis. O�Reilly Media Inc., 2018.
+         https://www.safaribooksonline.com/library/view/machine-learning-for/9781492025504/<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l19 level1 lfo10;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>A.Bagnall</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>J.Lines</span>, <span class=SpellE>A.Bostrom</span>, <span
+         class=SpellE>J.Large</span>, <span class=SpellE>E.Keogh</span>. The great
+         time series classification bake off: a review and experimental evaluation
+         of recent algorithmic advances. Data Mining and Knowledge Discovery, 2017,
+         V.31, issue 3, pp.606-660. DOI 10.1007/s10618-016-0483-9<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 2.3. ������������ ������ ��������� ��������. <span
+    class=SpellE>�������</span>-������. <span class=SpellE>�������</span> ���������
+    ����.</span></u><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+    mso-fareast-font-family:"Times New Roman";color:#333333;mso-fareast-language:
+    RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://vipbook.info/tehnika/svjaz/16923-Strang-G.-Nguyen-T.-Wavelets-and-filter-banks.html"><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>Gilbert <span class=SpellE>Strang</span>
+         and Truong Nguyen. </span><span class=SpellE><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-fareast-language:RU'>Wavelets</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'> <span
+         class=SpellE>and</span> <span class=SpellE>filter</span> <span
+         class=SpellE>banks</span>. <span class=SpellE>Wellesley-Cambridge</span> <span
+         class=SpellE>Press</span>, 1996.</span></a></span><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/3758075/?partner=neuroproject"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>�.�������</span></span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>. �������� � <span class=SpellE>��������</span> � ����� ��������
+         �������. �����, ����������� ������, 2008.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�.�. <span class=SpellE>������</span>,
+         �.�. ������, �.�. <span class=SpellE>���������</span>. <span class=SpellE>��������</span>
+         � �� �������������. ������ ���������� ����, ��� 2001, �.171, ���.5.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>. �������� � <span
+         class=SpellE>�������</span>-��������������.&nbsp;����������� ������ �����
+         ���������&nbsp;</span><span style='color:windowtext'><a
+         href="http://www.autex.spb.su/download/wavelet/books/tutorial.pdf"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>�����</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>J.Lewalle</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>. �������� � ������ ������ �
+         ����������� ������������ <span class=SpellE>�������</span>-��������������.
+         ����������� ������ ����� ���������&nbsp;</span><span style='color:windowtext'><a
+         href="http://www.autex.spb.su/download/wavelet/books/lewalle.pdf"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>�����</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�.&nbsp;<span class=SpellE>��������</span>.&nbsp;</span><span
+         style='color:windowtext'><a
+         href="http://www.autex.spb.su/wavelet/index.htm"><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-fareast-language:RU'>������ � �������� <span
+         class=SpellE>�������</span>-��������������.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>&nbsp;����� �������� �������� �
+         ������� ����������� ������ �� ��������� �� <span class=SpellE>���������</span>.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>M.V.Altaisky</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>V.A.Krylov</span>. Signal Identification Based on Multiscale
+         Decompositions. IT for real world problems, (Universities Press Series in
+         Systems, Models, Informatics and Control), <span class=SpellE>Sree</span>
+         Hari Rao (Ed.), pp. 178&#8722;221 Universities Press (India) Private
+         Limited 2011, ISBN: 978 81 7371 734 5<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Q.Zhang</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'> and <span
+         class=SpellE>A.Benveniste</span>. Wavelet Networks. IEEE Transactions on
+         Neural Networks, 1992, v.3, No.6, pp. 889-898.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>A.K.Alexandridis</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>A.D.Zapranis</span>. Wavelet Neural <span class=SpellE>Netwroks</span>:
+         A Practical Guide. http://ssrn.com/abstract=1923020<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoListParagraph style='margin-bottom:18.75pt;mso-add-space:auto;
+    text-indent:-18.0pt;mso-list:l25 level1 lfo11;tab-stops:list 36.0pt;background:
+    white;vertical-align:baseline'><![if !supportLists]><span style='font-size:
+    10.0pt;mso-bidi-font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    Arial;mso-fareast-language:RU'><span style='mso-list:Ignore'>10.<span
+    style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'>���� 3.1. ��������
+    ������� ����� <span class=SpellE>Python</span> � ����� ������ � ���</span></u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=11 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>J.VanderPlas</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Python Data Science Handbook: Essential Tools for Working with Data. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>O'Reilly</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Media</span>,
+         2016, 541 <span class=SpellE>pp</span>. ISBN 978-1-491-91205-8.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>��.������</span>
+         <span class=SpellE>����</span>. <span class=SpellE>Python</span> ���
+         ������� �����. ����� � ������ � �������� ��������. �����, 2018. ISBN
+         978-5-446-10914-2.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>M.Dawson</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Python Programming for the Absolute Beginner. </span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>3rd <span class=SpellE>Edition</span>.
+         <span class=SpellE>Course</span> <span class=SpellE>Technology</span>,
+         2010. ISBN 978-1-435-45500-9.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.������</span>.
+         ������������� �� <span class=SpellE>Python</span>. �����, 2012. ISBN
+         978-5-459-00314-7.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>M.Lutz</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Programming Python. 4th Edition. </span><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>O'Reilly</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Media</span>,
+         2010. ISBN 978-0-596-15810-1.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.����</span>.
+         ���������������� �� <span class=SpellE>Python</span>. ��� 1. ������-<span
+         class=GramE>���� ,</span> 2011. ISBN 978-5-93286-210-0.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>W.McKinney</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Python for Data Analysis: Data Wrangling with Pandas, <span class=SpellE>NumPy</span>,
+         and <span class=SpellE>IPython</span>. </span><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>O'Reilly</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Media</span>,
+         2012, 466 <span class=SpellE>pp</span>. ISBN 978-1-491-95766-0.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.��������</span>.
+         <span class=SpellE>Python</span> � ������ ������. ��� <span class=GramE>�����
+         ,</span> 2015, 482 c. ISBN 978-5-97060-315-4.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>A.C.Muller</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>S.Guido</span>. Introduction to Machine Learning with Python:
+         A Guide for Data Scientists. </span><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>O'Reilly</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Media</span>,
+         2016. ISBN 978-1-449-36941-5.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.������</span>,
+         <span class=SpellE>�.�����</span>. �������� � �������� �������� � ������� <span
+         class=SpellE>Python</span>. ����������� ��� ������������ �� ������ �
+         �������. �������, 2017, 480 c. ISBN 978-5-99089-108-1.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>B.Lubanovic</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Introducing Python: Modern Computing in Simple Packages. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>O'Reilly</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Media</span>,
+         2015. ISBN 978-1-449-35936-2.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.���������</span>.
+         ������� <span class=SpellE>Python</span>. ����������� �����
+         ����������������. �����, 2019, 480 c. ISBN 978-5-446-11054-4.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Au.Geron</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Hands-On Machine Learning with <span class=SpellE>Scikit</span>-Learn and <span
+         class=SpellE>TensorFlow</span>: Concepts, Tools, and Techniques to Build
+         Intelligent Systems. </span><span class=SpellE><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>O'Reilly</span></span><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'> <span class=SpellE>Media</span>, 2017. ISBN
+         978-1-491-96229-9.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.�����</span>.
+         ���������� �������� �������� � ������� <span class=SpellE>Scikit-Learn</span>
+         � <span class=SpellE>TensorFlow</span>. ���������, ����������� � �������
+         ��� �������� ���������������� ������. �������, 2018, 688 c. ISBN
+         978-5-950-02962-2.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>M.Lutz</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Python Pocket Reference: Python <span class=GramE>In</span> Your Pocket.
+         5th Edition. O'Reilly Media, 2014. 258 pp. </span><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>ISBN 978-1-449-35701-6.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.����</span>.
+         <span class=SpellE>Python</span>. ��������� ����������. �������, 2016, 320
+         c. ISBN 978-5-845-91965-6.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>L.Ramalho</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Fluent Python: Clear, Concise, and Effective Programming. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>O'Reilly</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Media</span>,
+         2015. 768 <span class=SpellE>pp</span>. ISBN 978-1-491-94600-8.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l25 level1 lfo11;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.�������</span>.
+         <span class=SpellE>Python</span>. � �������� ����������. ��� �����, 2016,
+         768 c. ISBN 978-5-97060-384-0.<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 3.2. ������ � ���������� ������ �� ����� R</span></u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l11 level1 lfo13;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>H.Wickham</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>G.Grolemund</span>. R for Data Science: Import, Tidy,
+         Transform, Visualize, and Model Data. </span><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>O'Reilly</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Media</span>,
+         2017, 522 <span class=SpellE>pp</span>. ISBN 978-1-491-91039-9.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l11 level1 lfo13;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.�����</span>,
+         <span class=SpellE>�.���������</span>. ���� R � ������� ����� � ������.
+         ������, ����������, ���������, ������������ � ������������� ������.
+         �������, 2017. ISBN 978-5-9909446-8-8.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l11 level1 lfo13;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>J.Adler</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>. R in
+         a Nutshell. 2nd Edition. O'Reilly Media, 2012, 724 pp. </span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>ISBN 978-1-449-31208-4.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l11 level1 lfo13;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>N.Matloff</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>. The
+         Art of R Programming: A Tour of Statistical Software Design. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>O'Reilly</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Media</span>,
+         2011, 316 <span class=SpellE>pp</span>. ISBN 978-1-593-27384-2.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l11 level1 lfo13;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>R.Kabacoff</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>. R in
+         Action: Data Analysis and Graphics with R. Second Edition. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Manning</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Publications</span>,
+         2015, 608 <span class=SpellE>pp</span>. ISBN 978-1-617-29138-8.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l11 level1 lfo13;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.�������</span>.
+         R � ��������. ������ � ������������ ������ �� ����� R. ��� �����, 2014,
+         588 �. ISBN 978-5-97060-241-6.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l11 level1 lfo13;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>P.Dalgaard</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Introductory Statistics with R. Springer, 2008, XVI+364 pp. </span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>ISBN 978-0-387-79054-1.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l11 level1 lfo13;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>R.Wehrens</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>. <span
+         class=SpellE>Chemometrics</span> with R: Multivariate Data Analysis in the
+         Natural Sciences and Life Sciences. </span><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>Springer</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, 2011, XIV+286 <span
+         class=SpellE>pp</span>. ISBN 978-3-642-17840-5.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l11 level1 lfo13;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>P.Cowpertwait</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>A.Metcalfe</span>. Introductory Time Series with R. Springer,
+         2009, XVI+256 pp. </span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>ISBN
+         978-0-387-88698-5.<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 4.1. ������������ ���������. <span class=SpellE>�������������</span>
+    ������</span></u><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+    mso-fareast-font-family:"Times New Roman";color:#333333;mso-fareast-language:
+    RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l24 level1 lfo14;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>David <span class=SpellE>E.Goldberg</span>.
+         Genetic algorithms in search, optimization, and machine learning. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Addison-Wesley</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Publishing</span>
+         <span class=SpellE>Co</span>., <span class=SpellE>Inc</span>., 1989.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l24 level1 lfo14;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Practical Handbook of Genetic Algorithms.
+         (Complex Coding Systems, <span class=SpellE>v.III</span>). </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Ed.L.D.Chambers</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>. CRC <span class=SpellE>Press</span>,
+         1998<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l24 level1 lfo14;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>������ � ������������
+         ���������� �� �����&nbsp;</span><span style='color:windowtext'><a
+         href="http://algolist.manual.ru/ai/ga/index.php"><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-fareast-language:RU'>http://algolist.manual.ru/</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l24 level1 lfo14;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>����&nbsp;</span><span
+         style='color:windowtext'><a href="http://garage.cse.msu.edu/"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>������ ��
+         ������������ � ���������� ������������ ����������</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>&nbsp;(<span class=SpellE>Genetic</span>
+         <span class=SpellE>Algorithms</span> <span class=SpellE>Research</span> <span
+         class=SpellE>and</span> <span class=SpellE>Application</span> <span
+         class=SpellE>Group</span>, <span class=SpellE>GARAGe</span>) � <span
+         class=SpellE>�����������</span> ��������������� ������������<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l24 level1 lfo14;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>���������� ������������
+         ������������� ��: ������������ �����������&nbsp;</span><span
+         style='color:windowtext'><a href="http://www.boxcar2d.com/"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>�����������</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>&nbsp;(������� <span
+         class=SpellE>Flash</span>, ������� ����� ���� �������� � �������� ��
+         ���������)<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l24 level1 lfo14;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>.&nbsp;</span><span
+         style='color:windowtext'><a
+         href="http://http/www.matbio.org/2012/Redko_7_676.pdf"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>������
+         �������������� ����� ��������� � ������������ ������������</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>. �������������� �������� � <span
+         class=SpellE>��������������</span>, 2012, �.7, �2, �.676-691.<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 4.2. ������������ ����������������</span></u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l18 level1 lfo15;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/1830132/?partner=neuroproject"><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>John <span class=SpellE><span class=GramE>R.Koza</span></span>.
+         Genetic programming. On the programming of computers by means of natural
+         selection. </span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>MIT <span class=SpellE>Press</span>, 1992.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l18 level1 lfo15;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a href="http://www.genetic-programming.com/"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>http://www.genetic-programming.com/</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l18 level1 lfo15;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.cs.bham.ac.uk/~wbl/biblio/README.html"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>������������ ��
+         ������������� ����������������</span></a></span><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>&nbsp;�� <span class=SpellE>William</span> <span
+         class=SpellE>Langdon</span>, <span class=SpellE>Steven</span> <span
+         class=SpellE>Gustafson</span>, <span class=SpellE>and</span> <span
+         class=SpellE>John</span> <span class=SpellE>Koza</span><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l18 level1 lfo15;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>D.Rivero</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>M.Gestal</span>, <span class=SpellE>J.R.Rabunal</span>.
+         Genetic Programming. Key Concepts and Examples. A <span class=SpellE>Biref</span>
+         Tutorial on Genetic Programming. </span><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>Lambert</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Academic</span>
+         <span class=SpellE>Publishing</span>, 2011. ISBN 9783845438450.<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 4.3. ����� ���������� ����� ���������� (����)</span></u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>��������� �.�.&nbsp;</span><span
+         style='color:windowtext'><a
+         href="http://www.gmdh.net/articles/theory/bookInductModel.pdf"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>����������� �����
+         ��������������� ������� ������� ������.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>&nbsp;����, <span class=SpellE>�������</span>
+         �����, 1982.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>��������� �.�., ������
+         �.�.&nbsp;</span><span style='color:windowtext'><a
+         href="http://www.gmdh.net/articles/theory/SelfOrganization.pdf"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>���������������
+         �������������� �������.</span></a></span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>&nbsp;����, <span class=SpellE>�������</span>
+         �����, 1985.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Farlow, S. J. (ed.). Self-organizing Method in
+         Modeling: GMDH Type Algorithms. </span><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>Statistics</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>: <span class=SpellE>Textbooks</span>
+         <span class=SpellE>and</span> <span class=SpellE>Monographs</span>, 54,
+         1984.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Madala</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, H.R.,
+         and <span class=SpellE>Ivakhnenko</span>, A.G.&nbsp;</span><span
+         style='color:windowtext'><a
+         href="http://www.gmdh.net/articles/theory/GMDHbook.zip"><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-ansi-language:EN-US;mso-fareast-language:
+         RU'>Inductive Learning Algorithms for Complex Systems Modeling.</span></a></span><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>&nbsp;Boca Raton, CRC Press Inc., 1994.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>Ivakhnenko</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, A.G.
+         and M&uuml;ller, J.-A. Present state and new problems of further GMDH
+         development. </span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>SAMS,
+         1995, vol.20, pp.3-16.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a href="http://www.gmdh.net/"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>http://www.gmdh.net</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>&nbsp;(�������� ���� ������)<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>���� ����������� �������������
+         ������:&nbsp;</span><span style='color:windowtext'><a
+         href="http://www.mgua.irtc.org.ua/"><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-fareast-language:RU'>http://www.mgua.irtc.org.ua/</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a href="http://www.vcclab.org/lab/pnn"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>On-line</span></span></a></span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>&nbsp;���������� ���������, �����������
+         �������������� ����.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>GMDH Shell.&nbsp;</span><span style='color:windowtext'><a
+         href="https://www.gmdhshell.com/"><span lang=EN-US style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-ansi-language:EN-US;mso-fareast-language:RU'>Forecasting
+         Software and Services.</span></a></span><span lang=EN-US style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-ansi-language:EN-US;mso-fareast-language:RU'><o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoListParagraph style='margin-bottom:18.75pt;mso-add-space:auto;
+    text-indent:-18.0pt;mso-list:l26 level1 lfo16;tab-stops:list 36.0pt;background:
+    white;vertical-align:baseline'><![if !supportLists]><span style='font-size:
+    10.0pt;mso-bidi-font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    Arial;mso-fareast-language:RU'><span style='mso-list:Ignore'>10.<span
+    style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'>���� 5.1. ��������
+    ������. <span class=SpellE>�����</span>-�������� �������</span></u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=11 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>���������� �������� �������. <span
+         class=SpellE>�.����</span>, <span class=SpellE><span class=GramE>�,������</span></span>,
+         <span class=SpellE>�.����</span> � ��.; ��� ��������� <span class=SpellE>�.������</span>,
+         <span class=SpellE>�.����</span>, <span class=SpellE>�.������</span>. �.,
+         ���, 1993.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>L.A.Zadeh</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>. Fuzzy
+         sets and their applications to cognitive and decision processes. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Academic</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Press</span>,
+         1975.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/3997500/?partner=neuroproject"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>�.�.�������</span></span><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#316594;
+         mso-fareast-language:RU'>. �������� ��������� � ��������� ����. �.,
+         ��������-����������� �������������� ����������; �����. ����������� ������,
+         2011.</span></a></span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>. ����� �������� � ��������� �
+         ��� ���������� ��������. � ��.: <span class=SpellE>�.�������</span>.
+         �������������� ������. �., &quot;���&quot;, 1972. ����������� ������
+         ���������&nbsp;</span><span style='color:windowtext'><a
+         href="http://www.aurahome.ru/gard1.html"><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-fareast-language:RU'>�����</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�����</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> ����, ���� ��������
+         ������.&nbsp;</span><span style='color:windowtext'><a
+         href="http://zadeh.narod.ru/"><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#316594;
+         mso-fareast-language:RU'>http://zadeh.narod.ru/</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>J.-<span class=SpellE>S.R.Jang</span>,
+         C.-<span class=SpellE>T.Sun</span>, <span class=SpellE>E.Mizutani</span>.&nbsp;</span><span
+         style='color:windowtext'><a
+         href="http://www.amazon.com/Neuro-Fuzzy-Soft-Computing-Computational-Intelligence/dp/0132610663"><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>Neuro-Fuzzy and Soft Computing: A Computational
+         Approach to Learning and Machine Intelligence</span></a></span><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>. </span><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>Prentice</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Hall</span>,
+         1997.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>O.Castillo</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>P.Melin</span>.&nbsp;</span><span style='color:windowtext'><a
+         href="http://www.amazon.com/Type-2-Fuzzy-Logic-Applications-Fuzziness/dp/3642095135/"><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>Type-2 Fuzzy Logic: Theory and Applications</span></a></span><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>. Studies in Fuzziness and Soft Computing,
+         Vol.223. Springer-<span class=SpellE>Verlag</span> Berlin Heidelberg,
+         2008.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l26 level1 lfo16;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.��������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>. ��������� ���������,
+         ���������� � <span class=SpellE>�����������������</span> ���������� �
+         �������� ��������� <span class=SpellE>��������</span> ������� �������.
+         �����, �����, 2013.<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 6.1. ��������������� ���������. ��������.
+    �������-������</span></u><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+    mso-fareast-font-family:"Times New Roman";color:#333333;mso-fareast-language:
+    RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l7 level1 lfo18;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>D.H.Wolpert</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>.
+         Stacked Generalization. </span><span class=SpellE><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>Neural</span></span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'> <span class=SpellE>Networks</span>, 1992, v.5,
+         pp.241-259.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l7 level1 lfo18;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.�������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>. ���������� �������� �����
+         �����. IX ������������� ������-����������� �����������
+         &quot;����������������-2007&quot;: ������ �� <span class=SpellE>����������������</span>.
+         ����� 2, �.11-42. �., ����, 2007. ����������� ������ ���������&nbsp;</span><span
+         style='color:windowtext'><a
+         href="http://alife.narod.ru/lectures/committee2007/committee2007.pdf"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>�����</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l7 level1 lfo18;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.�������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>�.�.�����</span>,
+         <span class=SpellE>�.�.����������</span>, <span class=SpellE>�.�.�����</span>.
+         ���������� ���������� ������������� <span class=SpellE>������������</span>
+         ���������������. ���������������: ����������, ����������, 2005, �1-2,
+         �.4-11.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l7 level1 lfo18;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.����������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>.&nbsp;</span><span
+         style='color:windowtext'><a
+         href="http://neurolectures.narod.ru/2010/Persiantsev-2010.pdf"><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-fareast-language:RU'>����������
+         ���������� ������������� <span class=SpellE>������������</span> ������ ���
+         ������������� � ��� ����������� ��������� �����.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>&nbsp;������� ������ ����
+         ����-2010. XII ������������� ������-����������� �����������
+         �����������������-2010�: ������ �� <span class=SpellE>����������������</span>.
+         �., ���� ����, 2010, �.212-242.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l7 level1 lfo18;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>V.A.Svetlov</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>S.A.Dolenko</span>. Development of the algorithm of adaptive construction
+         of hierarchical neural network classifiers. Optical Memory and Neural
+         Networks (Information Optics), 2017, V.26, No.1, p.40-46.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l7 level1 lfo18;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>B.S.Everitt</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>S.Landau</span>, <span class=SpellE>M.Leese</span>, <span
+         class=SpellE>D.Stahl</span>. Cluster Analysis. </span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>5th <span class=SpellE>Edition</span>.
+         <span class=SpellE>Wiley</span>, 2011. ISBN 0470749911<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l7 level1 lfo18;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>C.Bouveyron</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>G.Celeux</span>, <span class=SpellE>T.B.Murphy</span>, <span
+         class=SpellE>A.E.Raftery</span>. Model-Based Clustering and Classification
+         for Data Science: With Applications in R. Cambridge University Press,
+         2019. </span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>ISBN
+         110849420X.<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+    mso-fareast-font-family:"Times New Roman";color:#333333;mso-fareast-language:
+    RU'>��. ����� ����� ����������<o:p></o:p></span></p>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 6.2. ������ � ���������� ������ �� ����� <span
+    class=SpellE>Python</span> �� ������� ����� ��������� �����������</span></u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l1 level1 lfo19;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>T.Rashid</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>. Make
+         Your Own Neural Network. A step-by-step gentle journey through the
+         mathematics of neural networks, and making your own using the Python
+         computer language. </span><span class=SpellE><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>CreateSpace</span></span><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'> <span class=SpellE>Independent</span> <span
+         class=SpellE>Publishing</span> <span class=SpellE>Platform</span>, 2016.
+         ISBN 1530826608.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l1 level1 lfo19;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.�����</span>.
+         ������ ��������� ����. �������������� ����, ������� � ������ ���������
+         �����, � ��������� �������� ����������� ��������� ���� �� ����� <span
+         class=SpellE>Python</span>. �������, 2018. ISBN 978-1530826605.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l1 level1 lfo19;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>F.Chollet</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>. Deep
+         Learning with Python. </span><span class=SpellE><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>Manning</span></span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'> <span class=SpellE>Publications</span>, 2017.
+         ISBN 9781617294433.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l1 level1 lfo19;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.�����</span>.
+         �������� �������� �� <span class=SpellE>Python</span>. �����, 2018. ISBN
+         978-5-4461-0770-4.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l1 level1 lfo19;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>S.Rashka</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>V.Mirjalili</span>. Python Machine Learning: Machine Learning
+         and Deep Learning with Python, <span class=SpellE>scikit</span>-learn, and
+         <span class=SpellE>TensorFlow</span>. </span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>2nd <span class=SpellE>Edition</span>. <span
+         class=SpellE>Packt</span> <span class=SpellE>Publishing</span>, 2017. ISBN
+         9781787125933.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l1 level1 lfo19;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.�����</span>,
+         <span class=SpellE>�.����������</span>. <span class=SpellE>Python</span> �
+         �������� ��������. �������� � �������� �������� � �������������� <span
+         class=SpellE>Python</span>, <span class=SpellE>scikit-learn</span> � <span
+         class=SpellE>TensorFlow</span>. 2-� �������. �������, 2019. ISBN
+         978-5-907114-52-4.<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 6.3. ������� ����� ��������� ��������� ����������</span></u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l20 level1 lfo20;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>S.Bird</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>E.Klein</span>, <span class=SpellE>E.Loper</span>. Natural
+         Language Processing with Python. </span><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>Analyzing</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Text</span>
+         <span class=SpellE>with</span> <span class=SpellE>the</span> <span
+         class=SpellE>Natural</span> <span class=SpellE>Language</span> <span
+         class=SpellE>Toolkit</span>. <span class=SpellE>O�Reilly</span> <span
+         class=SpellE>Media</span>, 2009.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l20 level1 lfo20;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>B.Benfort</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>T.Ojeda</span>, <span class=SpellE>R.Bilbro</span>. Applied
+         Text Analysis with Python. Enabling Language-Aware Data Products with
+         Machine Learning. O�Reilly Media, 2018.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l20 level1 lfo20;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�������: <span class=SpellE>�.��������</span>,
+         <span class=SpellE>�.������</span>, <span class=SpellE>�.�����</span>.
+         ���������� ������ ��������� ������ �� <span class=SpellE>Python</span>.
+         �������� �������� � �������� ���������� ��������� ������������� �����.
+         �����, 2019. ISBN 978-5-4461-1153-<span class=GramE>4.�</span><o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 6.4. �������� � �������������.</span></u><span
+    style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+    "Times New Roman";color:#333333;mso-fareast-language:RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l0 level1 lfo21;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>R.Sutton</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>A.Barto</span>. Reinforcement Learning: An Introduction. </span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>MIT <span class=SpellE>Press</span>,
+         1998.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l0 level1 lfo21;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>L.Graesser</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>W.L.Keng</span>. Foundations of Deep Reinforcement Learning:
+         Theory and Practice in Python. </span><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>Addison-Wesley</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Professional</span>,
+         2019.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l0 level1 lfo21;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>T.Beysolow</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'> II.
+         Applied Reinforcement Learning with Python: With <span class=SpellE>OpenAI</span>
+         Gym, <span class=SpellE>Tensorflow</span>, and <span class=SpellE>Keras</span>.
+         </span><span class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Apress</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, 2019. ISBN 1484251261.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l0 level1 lfo21;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>M.Lapan</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>. Deep
+         Reinforcement Learning Hands-On: Apply modern RL methods, with deep
+         Q-networks, value iteration, policy gradients, TRPO, <span class=SpellE>AlphaGo</span>
+         Zero and more. </span><span class=SpellE><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>Packt</span></span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'> <span class=SpellE>Publishing</span>, 2018. ISBN
+         1788834240.<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal style='margin-bottom:18.75pt;text-indent:0cm;background:
+    white;vertical-align:baseline'><u><span style='font-size:10.5pt;font-family:
+    "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#333333;
+    mso-fareast-language:RU'>���� 6.5. ������� �������� ����� � ������ � �������
+    ��� � ��</span></u><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+    mso-fareast-font-family:"Times New Roman";color:#333333;mso-fareast-language:
+    RU'><o:p></o:p></span></p>
+    
+    <ol style='margin-top:0cm' start=1 type=1>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�.�. �������, �.�. �������.
+         ������ ������� ������������ �����. �., �����, 1979.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='color:windowtext'><a
+         href="http://www.ozon.ru/context/detail/id/4840965/?partner=neuroproject"><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-fareast-language:
+         RU'>�.�.������</span></span><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#316594;
+         mso-fareast-language:RU'>. ������� ����������� ������������ ��������
+         �����: ����� ������, ������������ ��������� � ������������ � ������. �.,
+         ������� ��� &quot;<span class=SpellE>��������</span>&quot;, 2010.</span></a></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.��������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>. �������� ������ ���������.
+         �., ���� �����, 2012. ISBN 978-5-317-04151-9<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>T.A.Dolenko</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>I.V.Churina</span>, <span class=SpellE>V.V.Fadeev</span>, and
+         <span class=SpellE>S.M.Glushkov</span>. Valence band of liquid water Raman
+         scattering: some peculiarities and applications in the diagnostics of
+         water media. </span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>J. <span
+         class=SpellE>Raman</span> <span class=SpellE>Spectroscopy</span>, 2000,
+         v.31, p. 863-870.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>�.�. ������, �.�. �������, �.�.
+         <span class=SpellE>�������</span>, �.�. ������, �.�. ���������.
+         ������������ �������������� � ������������ ������� �������� ������ <span
+         class=SpellE>������������</span> ���������. ��������� �����������, 2000,
+         �.30, N7, � 611-616.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.�������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>�.�.�������</span>,
+         <span class=SpellE>�.�.�������</span>, <span class=SpellE>�.�.������</span>.
+         �������� <span class=SpellE>������������</span> ������ �������
+         ������������ ���������� � �������������� ������������� ��������� �����.
+         ��������� �����������, 2001, �.31, N 9, ���.834-838.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>T.A.Dolenko</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>V.V.Fadeev</span>, <span class=SpellE>I.V.Gerdova</span>, <span
+         class=SpellE>S.A.Dolenko</span>, and <span class=SpellE>R.Reuter</span>.
+         Fluorescence Diagnostics of Oil Pollution in Coastal Marine Waters by Use
+         of Artificial Neural Networks. </span><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>Applied</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Optics</span>,
+         2002, v.41, No.24, pp.5155-5166.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>A.Tanaka</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>M.Kishino</span>, <span class=SpellE>T.Oishi</span>, <span
+         class=SpellE>R.Doerffer</span>, <span class=SpellE>H.Schiller</span>.
+         Application of neural network method to case II water. In: Proc. SPIE,
+         Remote Sensing of the Ocean and Sea Ice 2000 (Ed. <span class=SpellE>C.R.Bostater</span>,
+         <span class=SpellE>R.Santoleri</span>), 2000, v.4172, pp. 144-152.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>K.Hennig</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, T. de
+         <span class=SpellE>Vries</span>, <span class=SpellE>R.Paetzold</span>, <span
+         class=SpellE>K.Jantos</span>, <span class=SpellE>E.Voss</span>, <span
+         class=SpellE>A.Anders</span>. Multi Sensor System for Fast Analyses in
+         Environmental Monitoring with an Application in Waste Water Treatment.
+         European Association of Remote Sensing Laboratories (<span class=SpellE>EARSeL</span>)
+         <span class=SpellE>eProceedings</span> (Workshop on LIDAR on Land and Sea)
+         Editor: <span class=SpellE>R.Reuter</span>. 2001, v. 1, pp.61-67.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>S.Dolenko</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>A.Guzhva</span>, <span class=SpellE>E.Obornev</span>, <span
+         class=SpellE>I.Persiantsev</span>, <span class=SpellE>M.Shimelevich</span>.
+         Comparison of Adaptive Algorithms for Significant Feature Selection in
+         Neural Network Based Solution of the Inverse Problem of Electrical
+         Prospecting. In: <span class=SpellE>C.Alippi</span> et al (Eds.): ICANN
+         2009, Part II. (Lecture Notes in Computer Science, 2009, V.5769,
+         pp.397-405.) Springer-<span class=SpellE>Verlag</span> Berlin Heidelberg
+         2009.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>S.A.Burikov</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>S.A.Dolenko</span>, <span class=SpellE>T.A.Dolenko</span>, <span
+         class=SpellE>I.G.Persiantsev</span>. Application of Artificial Neural
+         Networks to Solve Problems of Identification and Determination of
+         Concentration of Salts in Multi-Component Water Solutions by Raman
+         spectra. Optical Memory and Neural Networks (Information Optics), 2010,
+         V.19, No.2, pp.140-148.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>S.Dolenko</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>T.Dolenko</span>, <span class=SpellE>S.Burikov</span>, <span
+         class=SpellE>V.Fadeev</span>, <span class=SpellE>A.Sabirov</span>, and <span
+         class=SpellE>I.Persiantsev</span>. Comparison of Input Data Compression
+         Methods in Neural Network Solution of Inverse Problem in Laser Raman
+         Spectroscopy of Natural Waters. </span><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>In</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>: A.E.P. <span class=SpellE>Villa</span>
+         <span class=SpellE>et</span> <span class=SpellE>al</span>. (<span
+         class=SpellE>Eds</span>.): ICANN 2012, <span class=SpellE>Part</span> II. <span
+         class=SpellE>Lecture</span> <span class=SpellE>Notes</span> <span
+         class=SpellE>in</span> <span class=SpellE>Computer</span> <span
+         class=SpellE>Science</span>, 2012, V.7553, pp.443-450.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>S.Dolenko</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>I.Isaev</span>,
+         <span class=SpellE>E.Obornev</span>, <span class=SpellE>I.Persiantsev</span>,
+         <span class=SpellE>M.Shimelevich</span>.&nbsp;</span><span
+         style='color:windowtext'><a
+         href="http://link.springer.com/chapter/10.1007%2F978-3-642-41013-0_9"><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>Study of Influence of Parameter Grouping on
+         the Error of Neural Network Solution of the Inverse Problem of Electrical
+         Prospecting.</span></a></span><span lang=EN-US style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-ansi-language:EN-US;mso-fareast-language:RU'>&nbsp;</span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>L.Iliadis</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>H.Papadopoulos</span>,
+         <span class=SpellE>and</span> <span class=SpellE>C.Jayne</span> (<span
+         class=SpellE>Eds</span>.): EANN-2013, <span class=SpellE>Part</span> 1. <span
+         class=SpellE>Communications</span> <span class=SpellE>in</span> <span
+         class=SpellE>Computer</span> <span class=SpellE>and</span> <span
+         class=SpellE>Information</span> <span class=SpellE>Science</span> (CCIS),
+         2013, V.383, pp.81-90.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>�.�.�������</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>�.�.�����</span>,
+         <span class=SpellE>�.�.�������</span>, <span class=SpellE>�.�.����������</span>,
+         <span class=SpellE>�.�.���������</span>. ��������� ������� <span
+         class=SpellE>�������������</span> ������� �������������������� ��������
+         ������ <span class=SpellE>����������������</span>. �������� �����.
+         �������� � ��������, 2013, �5, �.47-52.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>S.Dolenko</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>S.Burikov</span>,
+         <span class=SpellE>T.Dolenko</span>, <span class=SpellE>A.Efitorov</span>,
+         <span class=SpellE>K.Gushchin</span>, <span class=SpellE>I.Persiantsev</span>.&nbsp;</span><span
+         style='color:windowtext'><a
+         href="http://link.springer.com/chapter/10.1007%2F978-3-319-11179-7_101"><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>Neural Network Approaches to Solution of
+         the Inverse Problem of Identification and Determination of Partial
+         Concentrations of Salts in Multi-</span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-fareast-language:RU'>�</span><span class=SpellE><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>omponent</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-ansi-language:EN-US;mso-fareast-language:
+         RU'> Water Solutions.</span></a></span><span lang=EN-US style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-ansi-language:EN-US;mso-fareast-language:RU'>&nbsp;</span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>S.Wermter</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>et</span> <span
+         class=SpellE>al</span>. (<span class=SpellE>Eds</span>.): ICANN 2014. <span
+         class=SpellE>Lecture</span> <span class=SpellE>Notes</span> <span
+         class=SpellE>in</span> <span class=SpellE>Computer</span> <span
+         class=SpellE>Science</span> (LNCS), 2014, V.8681, pp.805�812.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>S.Dolenko</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>, <span class=SpellE>A.Efitorov</span>,
+         <span class=SpellE>S.Burikov</span>, <span class=SpellE>T.Dolenko</span>, <span
+         class=SpellE>K.Laptinskiy</span>, <span class=SpellE>and</span> <span
+         class=SpellE>I.Persiantsev</span>.&nbsp;</span><span style='color:windowtext'><a
+         href="http://link.springer.com/chapter/10.1007/978-3-319-23983-5_11"><span
+         lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:#316594;mso-ansi-language:
+         EN-US;mso-fareast-language:RU'>Neural Network Approaches to Solution of the
+         Inverse Problem of Identification and Determination of the Ionic
+         Composition of Multi-</span><span style='font-size:10.5pt;font-family:
+         "Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#316594;
+         mso-fareast-language:RU'>�</span><span class=SpellE><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";color:#316594;mso-ansi-language:EN-US;mso-fareast-language:
+         RU'>omponent</span></span><span lang=EN-US style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         color:#316594;mso-ansi-language:EN-US;mso-fareast-language:RU'> Water
+         Solutions.</span></a></span><span lang=EN-US style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-ansi-language:EN-US;mso-fareast-language:RU'>&nbsp;<span class=SpellE>L.Iliadis</span>
+         and <span class=SpellE>C.Jayne</span> (Eds.): EANN 2015. Springer
+         International Publishing Switzerland 2015. </span><span class=SpellE><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'>Communications</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>in</span> <span
+         class=SpellE>Computer</span> <span class=SpellE>and</span> <span
+         class=SpellE>Information</span> <span class=SpellE>Science</span> (CCIS),
+         2015, v.517, pp.109</span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";color:white;mso-fareast-language:
+         RU'>-</span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'><o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>I.Isaev</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>S.Dolenko</span>. Comparative Analysis of Residual
+         Minimization and Artificial Neural Networks as Methods of Solving Inverse
+         Problems: Test on Model Data. <span class=SpellE>A.V.Samsonovich</span>, <span
+         class=SpellE>V.V.Klimov</span>, <span class=SpellE>G.V.Rybina</span>, eds.
+         Biologically Inspired Cognitive Architectures (BICA) for Young Scientists.
+         Proceedings of the First International Early Research Career Enhancement
+         School (FIERCES 2016). </span><span class=SpellE><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>Springer</span></span><span style='font-size:
+         10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>, <span class=SpellE>Advances</span> <span
+         class=SpellE>in</span> <span class=SpellE>Intelligent</span> <span
+         class=SpellE>Systems</span> <span class=SpellE>and</span> <span
+         class=SpellE>Computing</span>, V.449, pp.289-295.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>I.V.Isaev</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>S.A.Dolenko</span>. Training with noise as a method to
+         increase noise resilience of neural network solution of inverse problems.
+         Optical Memory and Neural <span class=SpellE>Netwroks</span> (Information
+         Optics), 2016, V.25, No.3, pp. 142-148.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>T.A.Dolenko</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>S.A.Burikov</span>, <span class=SpellE>E.N.Vervald</span>, <span
+         class=SpellE>A.O.Efitorov</span>, <span class=SpellE>K.A.Laptinskiy</span>,
+         <span class=SpellE>O.E.Sarmanova</span>, <span class=SpellE>S.A.Dolenko</span>.
+         Improvement of reliability of molecular DNA computing: solution of inverse
+         problem of Raman spectroscopy using artificial neural networks. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Laser</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Physics</span>,
+         2017, V.27, No.2, p.025203-1-025203-8.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>A.Efitorov</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>T.Dolenko</span>, <span class=SpellE>S.Burikov</span>, <span
+         class=SpellE>K.Laptinskiy</span>, <span class=SpellE>S.Dolenko</span>.
+         Study of Efficiency of Dividing the Problem Space as a Means to Improve
+         Solution of Multi-parameter Inverse Problem by Adaptive Methods. </span><span
+         class=SpellE><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-fareast-language:RU'>Procedia</span></span><span
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-fareast-language:RU'> <span class=SpellE>Computer</span>
+         <span class=SpellE>Science</span>, 2018, V.123, pp.122-127. DOI: 10.1016/j.procs.2018.01.020<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>I.Isaev</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>S.Dolenko</span>. Group Determination of Parameters and
+         Training with Noise Addition: Joint Application to Improve the Resilience
+         of the Neural Network Solution of a Model Inverse Problem to Noise in
+         Data. Advances in Intelligent Systems and Computing, 2019, V.848,
+         pp.138-144. Springer, Cham. </span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>DOI: 10.1007/978-3-319-99316-4_18<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:#333333;text-indent:-18.0pt;mso-list:l13 level1 lfo22;
+         tab-stops:list 36.0pt;background:white;vertical-align:baseline'><span
+         class=SpellE><span lang=EN-US style='font-size:10.5pt;font-family:"Arial",sans-serif;
+         mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;
+         mso-fareast-language:RU'>I.Isaev</span></span><span lang=EN-US
+         style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+         "Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:RU'>, <span
+         class=SpellE>S.Burikov</span>, <span class=SpellE>T.Dolenko</span>, <span
+         class=SpellE>K.Laptinskiy</span>, <span class=SpellE>S.Dolenko</span>.
+         Artificial Neural Networks for Diagnostics of Water-Ethanol Solutions by
+         Raman Spectra. </span><span class=SpellE><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'>Studies</span></span><span style='font-size:10.5pt;
+         font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+         mso-fareast-language:RU'> <span class=SpellE>in</span> <span class=SpellE>Computational</span>
+         <span class=SpellE>Intelligence</span>, 2019, V.799, pp.167-175. DOI:
+         10.1007/978-3-030-01328-8_18<o:p></o:p></span></li>
+    </ol>
+    
+    <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+    
+    </div>
+    

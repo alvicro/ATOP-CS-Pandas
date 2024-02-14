@@ -160,6 +160,18 @@ def draw(request):
         context
     )
 
+def show_links(request):
+    return render(
+        request,
+        'groundwater_levels/neuronet.html'
+    )
+
+def show_pictures(request):
+    return render(
+        request,
+        'groundwater_levels/neuronet_in_hydrological_forecasts.html'
+    )
+
 def hxpt(request):
     context = {}
     data = read_xls(settings.BASE_DIR / 'static')
