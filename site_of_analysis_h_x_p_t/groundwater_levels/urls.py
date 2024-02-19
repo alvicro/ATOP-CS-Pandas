@@ -10,5 +10,6 @@ urlpatterns = [
     path('air_temperature/', air_temperature),
     path('Combined_graph_of_h-x-P-t/', hxpt),
     path('deep_neural_network/', show_links),
-    path('neural_networks_in_hydrological_forecasts/', show_pictures)
+    path('neural_networks_in_hydrological_forecasts/', show_pictures),
+    path('lack_of_correlation/', show_graphics),
 ]

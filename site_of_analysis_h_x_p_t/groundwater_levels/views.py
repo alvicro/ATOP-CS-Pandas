@@ -172,6 +172,13 @@ def show_pictures(request):
         'groundwater_levels/neuronet_in_hydrological_forecasts.html'
     )
 
+
+def show_graphics(request):
+    return render(
+        request,
+        'groundwater_levels/lack_of_correlation.html'
+    )
+
 def hxpt(request):
     context = {}
     data = read_xls(settings.BASE_DIR / 'static')
