@@ -172,7 +172,6 @@ def show_pictures(request):
         'groundwater_levels/neuronet_in_hydrological_forecasts.html'
     )
 
-
 def show_graphics(request):
     return render(
         request,
