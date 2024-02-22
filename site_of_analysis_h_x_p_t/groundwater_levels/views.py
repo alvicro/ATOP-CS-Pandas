@@ -97,7 +97,7 @@ def air_temperature(request):
     )
 
 
-def read_xls(xls_path):
+def read_xls(xls_path, year=0):
 # make an empty list for dataframes
     dfs = []
 # create dataframs, store as list
@@ -108,6 +108,11 @@ def read_xls(xls_path):
 # output below - dataframe with all data
         dataframe = pd.concat(dfs)
     print(dataframe)
+    if year:
+        dataframe = dataframe[dataframe["Дата"].dt.year==year]
+        print(year)
+        print(dataframe)
+    #df[df['Date'].dt.year == year]
 #%%
 
     p = dataframe["Давление, мм рт. ст."]  #dataframe.values[:, 1::].astype('float')
@@ -132,7 +137,8 @@ def draw(request):
         ax1 = request.POST['ax1']
         print(request.POST['ax2'])
         ax2 = request.POST['ax2']
-        data = read_xls(settings.BASE_DIR / 'static')
+        year = request.POST['year']
+        data = read_xls(settings.BASE_DIR / 'static', int(year))
         fig = plt.figure(dpi = 256)
         #ax = fig.add_subplot(projection='3d')
         #ax.scatter(p, x, t, marker='o', s=1)  # 3Д

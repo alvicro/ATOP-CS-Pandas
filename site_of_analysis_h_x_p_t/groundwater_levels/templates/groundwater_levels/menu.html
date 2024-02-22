@@ -1,10 +1,5 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'style.css' %}">
-<!-- link rel="stylesheet" href="https://meteoinfo.ru/templates/jm-hot-news-ef4/css/template_responsive.9.css">
-<link rel="stylesheet" href="https://meteoinfo.ru/templates/jm-hot-news-ef4/css/template.9.css">
-<link rel="stylesheet" href="https://meteoinfo.ru/templates/jm-hot-news-ef4/css/djmegamenu.9.css">
-<link rel="stylesheet" href="https://meteoinfo.ru/templates/jm-hot-news-ef4/css/bootstrap_responsive.9.css">
-<link rel="stylesheet" href="https://meteoinfo.ru/templates/jm-hot-news-ef4/css/bootstrap.9.css" -->
 <img  src="{% static 'Header_of_ATOP-CS-Pandas.png' %}">
 <h3 class="title">Citizen Science (Гражданская Наука)</h3>
 
@@ -15,11 +10,14 @@
         <li><a href="/atmospheric_pressure"> Давление (P=i(T))</a></li>
         <li><a href="/air_temperature"> Температура воздуха (t=j(T))</a></li>
         <li><a href="/Combined_graph_of_h-x-P-t"> Совмещённый график изменения во времени h, x, P, t</a></li>
-        <li><a href="/lack_of_correlation"> Графическая интерпретация отсутствия прямой взаимосвязи между h, x, P, t</a></li>
     </li>
     <li class="btn">ИСХОДНАЯ ИНФОРМАЦИЯ ПО СКВАЖИНАМ РОСНЕДРА</li>
     <li class="btn">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</li>
-        <li><a href="/deep_neural_network"> Глубокая нейронная сеть</a></li>
-        <li><a href="/neural_networks_in_hydrological_forecasts">
+        <li><a href="/deep_neural_network"> Глубокая нейронная сеть</a>
+        <ul><li>&nbsp;&nbsp;
+        <a href="http://kpk-nnga.sinp.msu.ru/index.php?id=nnga/">Курсы по основам нейронных сетей</a></li>
+        <li>&nbsp;&nbsp;<a href="/neural_networks_in_hydrological_forecasts">
             Нейронные сети в задачах гидрологических прогнозов</a></li>
+            </ul>
+            </li>
 </ul>

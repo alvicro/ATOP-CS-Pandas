@@ -19,7 +19,7 @@
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+small, strong, sub, sup, var, b, i, dl, dt, dd,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
@@ -105,11 +105,7 @@ a, a:active, a:visited { color: #607890; }
 a:hover { color: #036; }
 
 
-ul, ol { margin-left: 2em; }
-ol { list-style-type: decimal; }
 
-/* remove margins for navigation lists */
-nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
 
 small { font-size: 85%; }
 strong, th { font-weight: bold; }

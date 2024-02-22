@@ -97,9 +97,11 @@ header nav li {
 header nav li a {
 	display:block;
 	font-size:13px;
-	padding:5px 15px;
 	text-transform:uppercase;
 	font-weight:bold;
+}
+header nav a {
+	padding:5px 15px;
 }
 header nav li a:link, 
 header nav li a:visited {
