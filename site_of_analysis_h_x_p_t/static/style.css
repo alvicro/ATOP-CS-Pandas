@@ -6,7 +6,8 @@
 .btn {
     border: 1px solid black;
     border-radius: 3px 3px;
-    color:rgb(152, 36, 36);font-size:21px;font-weight:bold;
+/*Для основных пунктов меню, набранных прописным шрифтом, определён цвет ТЁМНО-СИНИЙ */
+    color:rgb(55, 22, 133);font-size:21px;font-weight:bold;
 }
 
 * { 
