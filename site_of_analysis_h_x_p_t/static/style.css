@@ -6,7 +6,7 @@
 .btn {
     border: 1px solid black;
     border-radius: 3px 3px;
-    color:blue;font-size:21px;font-weight:bold;
+    color:rgb(152, 36, 36);font-size:21px;font-weight:bold;
 }
 
 * { 
@@ -26,4 +26,11 @@ td, th {
 .title {
     color: #6c1313;font-size:37px;font-weight:bold;
 }
-.hfT {color: black;font-size:17px;font-weight:bold;}
+.hfT {color: rgb(5, 6, 5);font-size:17px;font-weight:bold;}
+.xgT {color: rgb(5, 6, 5);font-size:17px;font-weight:bold;}
+.PiT {color: rgb(5, 6, 5);font-size:17px;font-weight:bold;}
+.tjT {color: rgb(5, 6, 5);font-size:17px;font-weight:bold;}
+.hxPT {color: rgb(5, 6, 5);font-size:17px;font-weight:bold;}
+.DNN {color: rgb(5, 6, 5);font-size:17px;font-weight:bold;}
+.COURSES{color: rgb(5, 6, 5);font-size:17px;font-weight:bold;}
+.NNinHYDROLOGY{color: rgb(5, 6, 5);font-size:17px;font-weight:bold;}
