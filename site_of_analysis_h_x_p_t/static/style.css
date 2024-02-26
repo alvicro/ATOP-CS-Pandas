@@ -1,13 +1,14 @@
-.result {
+/*.result {
     width: 50vw;
     height: 50vh;
-}
+}*/
 
 .btn {
     border: 1px solid black;
     border-radius: 3px 3px;
 /*Для основных пунктов меню, набранных прописным шрифтом, определён цвет ТЁМНО-СИНИЙ */
     color:rgb(55, 22, 133);font-size:21px;font-weight:bold;
+    width: 37vw;
 }
 
 * { 
@@ -17,9 +18,11 @@
 
 /* table */
 td, th {
+   /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+    /*<th style="width: 100px">*/
     border-width: 1px 1px 0px 0px ;
     border-style: solid;
-    border-color: rgb(158, 188, 39);
+    border-color: rgb(117, 28, 225);
     padding-right: 10px;
     padding-left: 10px;
     word-wrap: break-word;
