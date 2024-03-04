@@ -11,11 +11,16 @@
     width: 37vw;
 }
 
-{ 
-    margin-left: 10 px; margin-bottom: 10 px;
+* { 
+    margin-left: 10 px;
+    margin-bottom: 10 px;
    /* margin:  0; 
     padding: 0; */
-} 
+}
+
+ul {
+    list-style-type: none;
+}
 
 /* table */
 td, th {
