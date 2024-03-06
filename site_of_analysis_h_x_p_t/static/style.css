@@ -9,19 +9,21 @@
 /*Для основных пунктов меню, набранных прописным шрифтом, определён цвет ТЁМНО-СИНИЙ */
     /*color:rgb(55, 22, 133);font-family:"Arial",sans-serif;font-size:21px;font-weight:bold;
     width: 37vw;*/
-.btn.pimary_inf_well-sump {color: #fff; /*Белый цвет текста*/
-     background-color:#3f51b5; /*Синий цвет фона кнопки*/ font-family:”Arial”, sans-serif;
-     font-size:21px; font-weight:bold; width:37vw;}
-.btn.primary_inf_Rosnedra { color: #fff; /*Белый цвет текста*/ 
+
+.btn {
+    color: #fff; /*Белый цвет текста*/
     background-color:#3f51b5; /*Синий цвет фона кнопки*/
-    font-family:”Arial”, sans-serif; font-size:21px; font-weight:bold; width:37vw;}
-.btn.artificial_intelligence { color: #fff; /*Белый цвет текста*/
-     background-color:#3f51b5; /*Синий цвет фона кнопки*/ 
-     font-family:”Arial”, sans-serif; font-size:21px; font-weight:bold; width:37vw;}
+    font-family:”Arial”, sans-serif;
+    font-size:21px;
+    font-weight:bold;
+    width:37vw;
+    margin: 4px;
+    padding: 4px;
+}
 
 * { 
     margin-left: 10 px;
-    margin-bottom: 10 px;
+    margin-bottom: 4 px;
    /* margin:  0; 
     padding: 0; */
 }
