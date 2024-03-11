@@ -107,7 +107,6 @@ def read_xls(xls_path, year=0):
 
 # output below - dataframe with all data
         dataframe = pd.concat(dfs)
-    print(dataframe)
     if year:
         dataframe = dataframe[dataframe["Дата"].dt.year==year]
         print(year)
