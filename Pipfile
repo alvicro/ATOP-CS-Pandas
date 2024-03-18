@@ -4,10 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pandas = "*"
-django = "*"
-matplotlib = "*"
-openpyxl = "*"
 
 [dev-packages]
 
