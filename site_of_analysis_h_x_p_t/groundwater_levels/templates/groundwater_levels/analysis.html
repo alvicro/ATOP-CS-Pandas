@@ -1,0 +1,33 @@
+{% include "groundwater_levels/menu.html" %}
+
+{% load static %}
+<form action="/draw/" method="post">
+    {% csrf_token %}
+    Ось 1
+    <select name="ax1">
+        <option value="d">Дата и время</option>
+        <option value="h">Уровень грунтовых вод</option>
+        <option value="p">Давление</option>
+        <option value="x">Осадки</option>
+        <option value="t">Температура воздуха</option>
+    </select>
+    Ось 2
+    <select name="ax2">
+        <option value="h">Уровень грунтовых вод</option>
+        <option value="p">Давление</option>
+        <option value="x">Осадки</option>
+        <option value="t">Температура воздуха</option>
+    </select>
+    Год
+    <select name="year">
+        <option value="0">Весь период</option>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+    </select>
+        
+<input type="submit" value="Нарисовать">
+</form>
+<img src="{% static plotsrc %}" alt='Тут будет график'>

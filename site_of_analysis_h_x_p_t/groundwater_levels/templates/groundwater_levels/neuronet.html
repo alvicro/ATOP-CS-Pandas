@@ -1,0 +1,308 @@
+{% include "groundwater_levels/menu.html" %}
+{% load static %}
+<link href="{% static 'neuro/css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'neuro/reset.css' %}" rel="stylesheet">
+<link href="{% static 'neuro/style.css' %}" rel="stylesheet">
+
+
+<div class=WordSection1>
+
+	<h3 style="text-align: left;"><u>Общая литература</u></h3>
+
+	<ul>
+		<li><a href="http://www.ozon.ru/context/detail/id/1835629/?partner=neuroproject">Mohamad H.Hassoun. Fundamentals of Artificial Neural Networks. MIT Press, Cambridge, Massachusetts, 1995.</a></li>
+		<li><a href="http://www.ozon.ru/context/detail/id/135794246/?partner=neuroproject">С.Хайкин. Нейронные сети: полный курс. 2-е изд. М., "Вильямс", 2006.</a></li>
+		<li>S.Haykin. Neural Networks and Learning Machines. 3rd Edition. Pearson, 2018.</li>
+		<li>А.А.Ежов, С.А.Шумский. Нейрокомпьютинг и его применения в экономике и бизнесе. М., МИФИ, 1998. Электронная версия книги находится <a href="http://www.neuroproject.ru/EzSh.php">здесь</a>.</li>
+		<li><a href="https://www.ozon.ru/context/detail/id/2745295/?partner=neuroproject">Д.А.Тархов. Нейронные сети. Модели и алгоритмы. М., Радиотехника, 2005. (Научная серия "Нейрокомпьютеры и их применение", ред. А.И.Галушкин. Кн.18.)</a></li>
+		<li>А.Н.Васильев, Д.А.Тархов. Нейростевое моделирование. Принципы. Алгоритмы. Приложения. СПб.: Изд-во Политехн. Ун-та, 2009. ISBN 978-5-7422-2272-9</li>
+		<li><a href="http://www.ozon.ru/context/detail/id/1025870/?partner=neuroproject">Л.Г.Комарцова, А.В.Максимов. Нейрокомпьютеры. М., Изд-во МГТУ им.Баумана, 2004.</a></li>
+		<li><a href="http://www.ozon.ru/context/detail/id/5129103/?partner=neuroproject">А.И.Галушкин. Нейронные сети. Основы теории. М., Горячая линия - Телеком, 2010.</a></li>
+		<li><a href="http://www.ozon.ru/context/detail/id/1307273/?partner=neuroproject">В.А.Головко. Нейронные сети: обучение, организация и применение. М., ИПРЖР, 2001.</a></li>
+		<li><a href="http://www.intuit.ru/department/ds/neuronnets/">Г.Э.Яхъяева. Основы теории нейронных сетей. Интернет-университет информационных технологий, изд-во "Открытые системы".</a></li>
+		<li><a href="http://www.ozon.ru/context/detail/id/1022260/?partner=neuroproject">В.В.Круглов, М.И.Дли, Р.Ю.Голунов. Нечёткая логика и искусственные нейронные сети. Физматлит, 2001.</a></li>
+		<li>C.C.Aggarwal. Neural Networks and Deep Learning. A Textbook. Springer International Publishing<br>
+			AG, 2018. DOI 10.1007/978-3-319-94463-0 ISBN 978-3-319-94462-3</li>
+		<li><a href="https://bit.ly/1bCmE3Z">К.В.Воронцов. Машинное обучение. Курс лекций.</a></li>
+		<li><a href="https://riorpub.com/en/nauka/monography/1591/view">С.А.Шумский. Машинный интеллект. Очерки по теории машинного обучения и<br>
+			искусственного интеллекта. М., РИОР, 2019. DOI: 10.29039/02011-1</a></li>
+	</ul>
+
+	<p><u>Тема 1.1. Основные понятия. Типология задач, решаемых методами машинного обучения. Многослойный персептрон.</u></p>
+
+	<dir>См. общую литературу. См.также:
+	</dir>
+
+	<ul>
+		<li>В.Сидоров. <a href="http://shkolazhizni.ru/archive/0/n-10573/">Что такое закон Мура?</a></li>
+		<li>А.Скробов. <a href="http://cs.usu.edu.ru/study/moore/">Закон Мура</a></li>
+		<li>W.S.McCulloch, W,Pitts. A Logical Calculus of the Ideas Immanent in Nervous Activity. Bulletin of Mathematical Biophysics, 1943, V. 5, pp. 115–133.</li>
+		<li>F.Rosenblatt. The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain. Psychological Review, 1958, V.65, No. 6, pp. 386-408.</li>
+		<li>K.Hornick, M.Stinchcombe, H.White. Multilayer Feedforward Networks are Universal Approximators. Neural Networks, 1989, v. 2, № 5, pp.359-366.</li>
+		<li>G.Cybenko. Approximation by Superpositions of a Sigmoidal Function. Mathematics of Control, Signals. and Systems, 1989, v. 2, № 4, pp.303-314.</li>
+		<li>K.Funahashi. On the Approximate Realization of Continuous Mappings by Neural Networks. Neural Networks, 1989, v. 2, № 3, pp.183-191.</li>
+		<li>Нейронные сети: история развития теории. Сборник статей под общей редакцией А.И.Галушкина, Я.З.Цыпкина. ИПРЖР, Москва 2001.</li>
+		<li>З.М.Шибзухов. Некоторые вопросы теоретической нейроинформатики. В кн.: XIII Всероссийская научно-техническая конференция "Нейроинформатика-2011". Лекции по нейроинформатике. М., НИЯУ МИФИ, 2010. С.44-72.</li>
+	</ul>
+
+	<p><u>Тема 1.2. Алгоритм обратного распространения ошибки и его модификации. Многослойные персептроны. Выбор оптимальных параметров сети</u></p>
+
+	<dir>См. общую литературу и литературу к Теме 1.1. См.также:
+	</dir>
+
+	<ul>
+		<li>I.Sutskever, J.Martens, G.Dahl, G.Hinton. On the importance of initialization and momentum in deep learning. J. of Machine Learning Research, 2013, V. 28, No. 3, pp. 1139-1147.</li>
+		<li>D.E.Rumelhardt, G.E.Hinton, R.J.Williams. Learning Internal Representations by Error Propagation. In: Parallel Distributed Processing: Explorations in the Microstructure of Cognition. V.1: Foundations. 1986, pp.318–362. MIT, Cambridge.</li>
+		<li>D.E.Rumelhardt, G.E.Hinton, R.J.Williams. Learning representations by back-propagating errors. Nature, 1986, V.323, pp.533-536.</li>
+		<li>Д.А.Тархов. Нейросетевые модели и алгоритмы. Справочник. М., Радиотехника, 2014.</li>
+		<li><a href="http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf">G.Hinton, N.Srivastava, K.Swersky. Neural Netwroks for Machine Learning, Lecture 6. </a></li>
+		<li>А.В.Гасников, П.Е.Двуреченский, Ю.Е.Нестеров. Стохастические градиентные методы с неточным оракулом. Труды МФТИ, 2016, т.8, № 1, с.41-91.</li>
+		<li>N.Srivastava, G.Hinton, A.Krizhevsky, I.Sutskever, R.Salakhutdinov. <a href="https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf">Dropout: A Simple Way to Prevent Neural Networks from Overfitting.</a> J. of Machine Learning Research, 2014, V.15, pp.1929-1958.</li>
+		<li><a href="http://cs231n.github.io/neural-networks-3/">Convolutional Neural Networks for Visual Recognition.</a></li>
+		<li><a href="http://arxiv.org/abs/1206.5533v2">Y.Bengio. Practical Recommendations for Gradient-Based Training of Deep Architectures. 2012.</a></li>
+	</ul>
+
+	<p><u>Тема 1.3. Нейронная сеть с общей регрессией. Вероятностная нейронная сеть. Нейронные сети с радиальными базисными функциями.</u></p>
+
+	<ul>
+		<li>Specht, D. Probabilistic Neural Networks. Neural Networks, 1990, 3, 109-118.</li>
+		<li>Specht, D. A General Regression Neural Network. IEEE Trans. on Neural Networks, Nov. 1991, 2, 6, 568-576.</li>
+		<li>Burrascano, P. Learning Vector Quantization for the Probabilistic Neural Network. IEEE Trans. on Neural Networks, July 1991, 2, 458-461.</li>
+		<li>Schieler, H., Hartmann, U. Mapping neural network derived from the parzen window estimator. Neural Networks, 1992, V.5, pp.903-909.</li>
+		<li>Specht, D. The General Regression Neural Network – Rediscovered. Neural Networks, 1993, V.6, pp.1033-1034.</li>
+	</ul>
+
+	<p><u>Тема 1.4. Нейронная сеть и самоорганизующиеся карты Кохонена.</u></p>
+
+	<ul>
+		<li>Caudill, M. The Kohonen Model. Neural Network Primer. AI Expert, 1990, 25-31.</li>
+		<li>P.Tavan, H.Grubmuller, H.Kuhnel. Self-organization of associative memory and pattern classification: recurrent signal processing on topological feature maps. Biological Cybernetics, 64 (1990), pp.95-105.</li>
+		<li><a href="http://www.ozon.ru/context/detail/id/5040102/?partner=neuroproject">Т.Кохонен. Самоорганизующиеся карты. М., "Бином", 2008. 656 с.</a></li>
+		<li><a href="http://www.ozon.ru/context/detail/id/117979/?partner=neuroproject">Г.Дебок, Т.Кохонен. Анализ финансовых данных с помощью самоорганизующихся карт. М., "Альпина", 2001.</a></li>
+	</ul>
+	<u>Тема 1.5. Нейронные сети Хопфилда. Нейронные сети Хэмминга. Машина Больцмана.</u>
+
+	<ul>
+		<li>J.J.Hopfield. Neural networks and physical systems with emergent collective computational abilities. Proceedings of National Academy of Sciences of USA, 1982, V.79, No.8, pp.2554-2558.&nbsp;Электронная версия находится <a href="http://www.pnas.org/content/79/8/2554.full.pdf+html">здесь</a>.</li>
+		<li>Я.М.Карандашев, Б.В.Крыжановский, Л.Б.Литинский. Обобщённая модель Хопфилда и статфизический подход: общий случай. Нейроинформатика-2011. XIII Всероссийская научно-техническая конференция. Сборник научных трудов, ч.3, с.181-190. М., НИЯУ МИФИ, 2010.</li>
+		<li>B.Denby. The Use of Neural Networks in High-Enegry Physics. Neural Computation, v.5, 1993, pp. 505-549</li>
+		<li>См. также общую литературу</li>
+	</ul>
+
+	<p><u>Тема 1.6. Глубокие нейронные сети. Свёрточные нейронные сети</u></p>
+
+	<ul>
+		<li>В.А.Головко. От многослойных персептронов к нейронным сетям глубокого доверия: парадигмы обучения и применение. В сб.: Нейроинформатика-2015. XVII Всероссийская научно-техническая конференция с международным участием. Лекции по нейроинформатике, с.47-84. НИЯУ МИФИ, 2015.</li>
+		<li>I.Sutskever, J.Martens, G.Dahl, G.Hinton. On the importance of initialization and momentum in deep learning. J. of Machine Learning Research, 2013, V. 28, No. 3, pp. 1139–1147.</li>
+		<li>Y.Bengio. Practical Recommendations for Gradient-Based Training of Deep Architectures. https://arxiv.org/abs/1206.5533v2</li>
+		<li>I.Goodfellow, Y.Bengio, A.Courville. Deep Learning. MIT Press, 2016. http://www.deeplearningbook.org/</li>
+		<li>A.Gibson, J.Patterson. Deep Learning. O’Reilly Media, Inc., 2017. https://www.safaribooksonline.com/library/view/deep-learning/9781491924570/</li>
+		<li>K.He, X.Zhang, Sh.Ren, J.Sun. Deep Residual Learning for Image Recognition. <a href="http://arxiv.org/abs/1512.03385v1">http://arxiv.org/abs/1512.03385v1</a></li>
+		<li>L.A.Gatys, A.S.Ecker, M.Bethge. A Neural Algorithm of Artistic Style. <a href="http://arxiv.org/abs/1508.06576v1">http://arxiv.org/abs/1508.06576v1</a></li>
+		<li>A.Mordvintsev, C.Olah, M.Tyka. Inceptionism: Going Deeper into Neural Networks. Google Research Blog, June 17, 2015. <a href="http://googleresearch.blogspot.ru/2015/06/inceptionism-going-deeper-into-neural.html">http://googleresearch.blogspot.ru/2015/06/inceptionism-going-deeper-into-neural.html</a></li>
+		<li>Le Cun et.al. Backpropagation applied to handwritten ZIP code recognition. Neural Computation, v.1, n.4, 1989, pp.541-551.</li>
+	</ul>
+
+	<p><u>Тема 1.7. Генеративные состязательные сети</u></p>
+
+	<ul>
+		<li>I.J. Goodfellow, J. Pouget-Abadie, M. Mirza, Bing Xu, D. Warde-Farley, Sh. Ozairy, A. Courville, Y. Bengio. Generative Adversarial Nets. http://arxiv.org/abs/1406.2661v1</li>
+		<li>I.Goodfellow. NIPS 2016 Tutorial: Generative Adversarial Networks. https://arxiv.org/abs/1701.00160v4</li>
+		<li>D.Foster. Generative Deep Learning: Teaching Machines to Paint, Write, Compose, and Play. O'Reilly Media, 2019. ISBN 1492041947.</li>
+	</ul>
+
+	<p><u>Тема 2.1. Кодирование и нормировка данных. Линейный и нелинейный анализ главных компонент. Оценка значимости входов</u></p>
+
+	<p>См. общую литературу. См.также:</p>
+
+	<ul>
+		<li>Esbensen, K.H., Multivariate Data Analysis—In Practice, an Introduction to Multivariate Data Analysis and Experimental Design, 5th ed., CAMO Software AS, 2006.</li>
+		<li>Нелинейный метод главных компонент. <a href="http://pca.narod.ru/">http://pca.narod.ru</a></li>
+		<li>Алексей Померанцев. <a href="http://www.chemometrics.ru/materials/textbooks/pca.htm">Метод главных компонент (PCA)</a></li>
+		<li>Алексей Померанцев. <a href="http://www.chemometrics.ru/materials/textbooks/mcr.htm">Многомерное разрешение кривых</a></li>
+		<li>De Juan, Anna and Tauler, Roma. <a href="http://dx.doi.org/10.1080/10408340600970005">Multivariate Curve Resolution (MCR) from 2000: Progress in Concepts and Applications.</a> Critical Reviews in Analytical Chemistry, 2006, V.36, No:3, pp.163-176.</li>
+		<li>Herve Abdi. <a href="http://www.utd.edu/~herve/Abdi-PLSR2007-pretty.pdf">Partial Least Square Regression (PLS-Regression)</a>. In: Neil Salkind (Ed.) Encyclopedia of Measurement and Statistics. Thousand Oaks (CA): Sage, 2007.</li>
+		<li>А.Г.Гужва, С.А.Доленко, И.Г.Персианцев, Ю.С.Шугай. Сравнительный анализ методов определения существенности входных переменных при нейросетевом моделировании: методика сравнения и её применение к известным задачам реального мира. Нейроинформатика-2008. X Всероссийская научно-техническая конференция. Сборник научных трудов, ч.2, с.216-225. М., МИФИ, 2008.</li>
+		<li>А.Г.Гужва, С.А.Доленко, И.Г.Персианцев. Методика отбора существенных входных признаков при нейросетевом решении задач регрессии. Нейрокомпьютеры: разработка, применение, 2010, №3, с.20-32.</li>
+	</ul>
+
+	<p><u>Тема 2.2. Фрактальная размерность и алгоритмы её определения. Анализ временных рядов</u></p>
+
+	<ul>
+		<li><a href="http://www.ozon.ru/context/detail/id/2805007/?partner=neuroproject">Ричард М. Кроновер. Фракталы и хаос в динамических системах. Основы теории. М, Техносфера, 2006.</a></li>
+		<li><a href="http://www.ozon.ru/context/detail/id/1726542/?partner=neuroproject">Edgar E.Peters. Chaos and Order in the Capital Markets: A New View of Cycles, Prices, and Market Volatility. 2nd Edition. Wiley Finance, 1996.</a> Имеется перевод: <a href="http://www.ozon.ru/context/detail/id/947092/?partner=neuroproject">Э.Петерс. Хаос и порядок на рынках капитала. Новый аналитический взгляд на циклы, цены и изменчивость рынка. М., "Мир", 2000.</a></li>
+		<li><a href="http://www.ozon.ru/context/detail/id/1787700/?partner=neuroproject">Edgar E.Peters. Fractal Market Analysis: Applying Chaos Theory to Investment and Economics. Wiley Finance, 1994.</a> Имеется перевод: <a href="http://www.ozon.ru/context/detail/id/1691158/?partner=neuroproject">Э.Петерс. Фрактальный анализ финансовых рынков. Приложение теории хаоса к инвестициям и экономике. "Интернет-трейдинг", 2004.</a></li>
+		<li>М.М.Дубовиков, А.В.Крянев, Н.В.Старченко. Размерность минимального покрытия и локальный анализ фрактальных временных рядов. Вестник РУДН. Серия Прикладная и компьютерная математика. 2004, Т.3, №1, с.30-44.</li>
+		<li>P.Cowpertwait, A.Metclfe. Introductory Time Series with R. Springer, 2009. 254 pp.</li>
+		<li>M Braun. Machine Learning for Time Series Data Analysis. O’Reilly Media Inc., 2018. https://www.safaribooksonline.com/library/view/machine-learning-for/9781492025504/</li>
+		<li>A.Bagnall, J.Lines, A.Bostrom, J.Large, E.Keogh. The great time series classification bake off: a review and experimental evaluation of recent algorithmic advances. Data Mining and Knowledge Discovery, 2017, V.31, issue 3, pp.606-660. DOI 10.1007/s10618-016-0483-9</li>
+	</ul>
+
+	<p><u>Тема 2.3. Спектральные методы обработки сигналов. Вейвлет-анализ. Вейвлет нейронные сети.</u></p>
+
+	<ul>
+		<li><a href="http://vipbook.info/tehnika/svjaz/16923-Strang-G.-Nguyen-T.-Wavelets-and-filter-banks.html">Gilbert Strang and Truong Nguyen. Wavelets and filter banks. Wellesley-Cambridge Press, 1996.</a></li>
+		<li><a href="http://www.ozon.ru/context/detail/id/3758075/?partner=neuroproject">М.Фрейзер. Введение в вэйвлеты в свете линейной алгебры. Бином, Лаборатория знаний, 2008.</a></li>
+		<li>И.М. Дремин, О.В. Иванов, В.А. Нечитайло. Вейвлеты и их использование. Успехи физических наук, Май 2001, т.171, стр.5.</li>
+		<li>Р.Поликар. Введение в вейвлет-преобразование.&nbsp;Электронная версия книги находится <a href="http://www.autex.spb.su/download/wavelet/books/tutorial.pdf">здесь</a>.</li>
+		<li>J.Lewalle. Введение в анализ данных с применением непрерывного вейвлет-преобразования. Электронная версия книги находится <a href="http://www.autex.spb.su/download/wavelet/books/lewalle.pdf">здесь</a>.</li>
+		<li>В.&nbsp;Грибунин. <a href="http://www.autex.spb.su/wavelet/index.htm">Теория и практика вейвлет-преобразования.</a> Очень полезная страница с большим количеством ссылок на материалы по вейвлетам.</li>
+		<li>M.V.Altaisky, V.A.Krylov. Signal Identification Based on Multiscale Decompositions. IT for real world problems, (Universities Press Series in Systems, Models, Informatics and Control), Sree Hari Rao (Ed.), pp. 178−221 Universities Press (India) Private Limited 2011, ISBN: 978 81 7371 734 5</li>
+		<li>Q.Zhang and A.Benveniste. Wavelet Networks. IEEE Transactions on Neural Networks, 1992, v.3, No.6, pp. 889-898.</li>
+		<li>A.K.Alexandridis, A.D.Zapranis. Wavelet Neural Netwroks: A Practical Guide. http://ssrn.com/abstract=1923020</li>
+	</ul>
+
+	<p><u>Тема 3.1. Основные понятия языка Python и приёмы работы с ним</u></p>
+
+	<ul>
+		<li>J.VanderPlas. Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media, 2016, 541 pp. ISBN 978-1-491-91205-8.</li>
+		<li>Перевод: Дж.Вандер Плас. Python для сложных задач. Наука о данных и машинное обучение. Питер, 2018. ISBN 978-5-446-10914-2.</li>
+		<li>M.Dawson. Python Programming for the Absolute Beginner. 3rd Edition. Course Technology, 2010. ISBN 978-1-435-45500-9.</li>
+		<li>Перевод: М.Доусон. Программируем на Python. Питер, 2012. ISBN 978-5-459-00314-7.</li>
+		<li>M.Lutz. Programming Python. 4th Edition. O'Reilly Media, 2010. ISBN 978-0-596-15810-1.</li>
+		<li>Перевод: М.Лутц. Программирование на Python. Том 1. Символ-Плюс , 2011. ISBN 978-5-93286-210-0.</li>
+		<li>W.McKinney. Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython. O'Reilly Media, 2012, 466 pp. ISBN 978-1-491-95766-0.</li>
+		<li>Перевод: У.Маккинни. Python и анализ данных. ДМК Пресс , 2015, 482 c. ISBN 978-5-97060-315-4.</li>
+		<li>A.C.Muller, S.Guido. Introduction to Machine Learning with Python: A Guide for Data Scientists. O'Reilly Media, 2016. ISBN 978-1-449-36941-5.</li>
+		<li>Перевод: А.Мюллер, С.Гвидо. Введение в машинное обучение с помощью Python. Руководство для специалистов по работе с данными. Вильямс, 2017, 480 c. ISBN 978-5-99089-108-1.</li>
+		<li>B.Lubanovic. Introducing Python: Modern Computing in Simple Packages. O'Reilly Media, 2015. ISBN 978-1-449-35936-2.</li>
+		<li>Перевод: Б.Любанович. Простой Python. Современный стиль программирования. Питер, 2019, 480 c. ISBN 978-5-446-11054-4.</li>
+		<li>Au.Geron. Hands-On Machine Learning with Scikit-Learn and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems. O'Reilly Media, 2017. ISBN 978-1-491-96229-9.</li>
+		<li>Перевод: О.Жерон. Прикладное машинное обучение с помощью Scikit-Learn и TensorFlow. Концепции, инструменты и техники для создания интеллектуальных систем. Вильямс, 2018, 688 c. ISBN 978-5-950-02962-2.</li>
+		<li>M.Lutz. Python Pocket Reference: Python In Your Pocket. 5th Edition. O'Reilly Media, 2014. 258 pp. ISBN 978-1-449-35701-6.</li>
+		<li>Перевод: М.Лутц. Python. Карманный справочник. Вильямс, 2016, 320 c. ISBN 978-5-845-91965-6.</li>
+		<li>L.Ramalho. Fluent Python: Clear, Concise, and Effective Programming. O'Reilly Media, 2015. 768 pp. ISBN 978-1-491-94600-8.</li>
+		<li>Перевод: Л.Рамальо. Python. К вершинам мастерства. ДМК Пресс, 2016, 768 c. ISBN 978-5-97060-384-0.</li>
+	</ul>
+
+	<p><u>Тема 3.2. Работа с нейронными сетями на языке R</u></p>
+
+	<ul>
+		<li>H.Wickham, G.Grolemund. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. O'Reilly Media, 2017, 522 pp. ISBN 978-1-491-91039-9.</li>
+		<li>Перевод: Х.Уикем, Г.Гроулмунд. Язык R в задачах науки о данных. Импорт, подготовка, обработка, визуализация и моделирование данных. Вильямс, 2017. ISBN 978-5-9909446-8-8.</li>
+		<li>J.Adler. R in a Nutshell. 2nd Edition. O'Reilly Media, 2012, 724 pp. ISBN 978-1-449-31208-4.</li>
+		<li>N.Matloff. The Art of R Programming: A Tour of Statistical Software Design. O'Reilly Media, 2011, 316 pp. ISBN 978-1-593-27384-2.</li>
+		<li>R.Kabacoff. R in Action: Data Analysis and Graphics with R. Second Edition. Manning Publications, 2015, 608 pp. ISBN 978-1-617-29138-8.</li>
+		<li>Перевод: Р.Кабаков. R в действии. Анализ и визуализация данных на языке R. ДМК Пресс, 2014, 588 с. ISBN 978-5-97060-241-6.</li>
+		<li>P.Dalgaard. Introductory Statistics with R. Springer, 2008, XVI+364 pp. ISBN 978-0-387-79054-1.</li>
+		<li>R.Wehrens. Chemometrics with R: Multivariate Data Analysis in the Natural Sciences and Life Sciences. Springer, 2011, XIV+286 pp. ISBN 978-3-642-17840-5.</li>
+		<li>P.Cowpertwait, A.Metcalfe. Introductory Time Series with R. Springer, 2009, XVI+256 pp. ISBN 978-0-387-88698-5.</li>
+	</ul>
+
+	<p><u>Тема 4.1. Генетические алгоритмы. Многоагентные методы</u></p>
+
+	<ul>
+		<li>David E.Goldberg. Genetic algorithms in search, optimization, and machine learning. Addison-Wesley Publishing Co., Inc., 1989.</li>
+		<li>Practical Handbook of Genetic Algorithms. (Complex Coding Systems, v.III). Ed.L.D.Chambers. CRC Press, 1998</li>
+		<li>Статьи о генетических алгоритмах на сайте <a href="http://algolist.manual.ru/ai/ga/index.php">http://algolist.manual.ru/</a></li>
+		<li>Сайт <a href="http://garage.cse.msu.edu/">Группы по исследованию и применению генетических алгоритмов</a> (Genetic Algorithms Research and Application Group, GARAGe) в Мичиганском государственном университете</li>
+		<li>Интересная демонстрация использования ГА: генетическая оптимизация <a href="http://www.boxcar2d.com/">автомобилей</a>&nbsp;(требует Flash, который может быть отключен в браузере по умолчанию)</li>
+		<li>В.Г.Редько. <a href="http://http//www.matbio.org/2012/Redko_7_676.pdf">Модель взаимодействия между обучением и эволюционной оптимизацией</a>. Математическая биология и биоинформатика, 2012, т.7, №2, с.676-691.</li>
+	</ul>
+
+	<p><u>Тема 4.2. Генетическое программирование</u></p>
+
+	<ul>
+		<li><a href="http://www.ozon.ru/context/detail/id/1830132/?partner=neuroproject">John R.Koza. Genetic programming. On the programming of computers by means of natural selection. MIT Press, 1992.</a></li>
+		<li><a href="http://www.genetic-programming.com/">http://www.genetic-programming.com/</a></li>
+		<li><a href="http://www.cs.bham.ac.uk/~wbl/biblio/README.html">Библиография по генетическому программированию</a> от William Langdon, Steven Gustafson, and John Koza</li>
+		<li>D.Rivero, M.Gestal, J.R.Rabunal. Genetic Programming. Key Concepts and Examples. A Biref Tutorial on Genetic Programming. Lambert Academic Publishing, 2011. ISBN 9783845438450.</li>
+	</ul>
+
+	<p><u>Тема 4.3. Метод группового учета аргументов (МГУА)</u></p>
+
+	<ul>
+		<li>Ивахненко А.Г. <a href="http://www.gmdh.net/articles/theory/bookInductModel.pdf">Индуктивный метод самоорганизации моделей сложных систем.</a> Киев, Наукова думка, 1982.</li>
+		<li>Ивахненко А.Г., Мюллер Й.А. <a href="http://www.gmdh.net/articles/theory/SelfOrganization.pdf">Самоорганизация прогнозирующих моделей.</a> Киев, Наукова думка, 1985.</li>
+		<li>Farlow, S. J. (ed.). Self-organizing Method in Modeling: GMDH Type Algorithms. Statistics: Textbooks and Monographs, 54, 1984.</li>
+		<li>Madala, H.R., and Ivakhnenko, A.G. <a href="http://www.gmdh.net/articles/theory/GMDHbook.zip">Inductive Learning Algorithms for Complex Systems Modeling.</a> Boca Raton, CRC Press Inc., 1994.</li>
+		<li>Ivakhnenko, A.G. and Müller, J.-A. Present state and new problems of further GMDH development. SAMS, 1995, vol.20, pp.3-16.</li>
+		<li><a href="http://www.gmdh.net/">http://www.gmdh.net</a> (основной сайт метода)</li>
+		<li>Сайт лаборатории разработчиков метода: <a href="http://www.mgua.irtc.org.ua/">http://www.mgua.irtc.org.ua/</a></li>
+		<li><a href="http://www.vcclab.org/lab/pnn">On-line</a> применение программы, реализующей полиномиальные сети.</li>
+		<li>GMDH Shell. <a href="https://www.gmdhshell.com/">Forecasting Software and Services.</a></li>
+	</ul>
+
+	<p><u>Тема 5.1. Нечёткая логика. Нейро-нечёткие системы</u></p>
+
+	<ul>
+		<li>Прикладные нечёткие системы. К.Асаи, Д,Ватада, с.Иваи и др.; под редакцией Т.Тэрано, К.Асаи, М.Сугэно. М., Мир, 1993.</li>
+		<li>L.A.Zadeh. Fuzzy sets and their applications to cognitive and decision processes. Academic Press, 1975.</li>
+		<li><a href="http://www.ozon.ru/context/detail/id/3997500/?partner=neuroproject">Г.Э.Яхъяева. Нечёткие множества и нейронные сети. М., Интернет-Университет Информационных Технологий; БИНОМ. Лаборатория знаний, 2011.</a></li>
+		<li>М.Гарднер. Казнь врасплох и связанный с ней логический парадокс. В кн.: М.Гарднер. Математические досуги. М., "Мир", 1972. Электронная версия находится <a href="http://www.aurahome.ru/gard1.html">здесь</a>.</li>
+		<li>Лотфи Заде, отец нечёткой логики. <a href="http://zadeh.narod.ru/">http://zadeh.narod.ru/</a></li>
+		<li>J.-S.R.Jang, C.-T.Sun, E.Mizutani. <a href="http://www.amazon.com/Neuro-Fuzzy-Soft-Computing-Computational-Intelligence/dp/0132610663">Neuro-Fuzzy and Soft Computing: A Computational Approach to Learning and Machine Intelligence</a>. Prentice Hall, 1997.</li>
+		<li>O.Castillo, P.Melin. <a href="http://www.amazon.com/Type-2-Fuzzy-Logic-Applications-Fuzziness/dp/3642095135/">Type-2 Fuzzy Logic: Theory and Applications</a>. Studies in Fuzziness and Soft Computing, Vol.223. Springer-Verlag Berlin Heidelberg, 2008.</li>
+		<li>Ю.Н.Хижняков. Алгоритмы нечеткого, нейронного и нечетконейронного управления в системах реального времению Учебное пособие. Пермь, ПНИПУ, 2013.</li>
+	</ul>
+
+	<p><u>Тема 6.1. Комбинированные алгоритмы. Ансамбли. Кластер-анализ</u></p>
+
+	<ul>
+		<li>D.H.Wolpert. Stacked Generalization. Neural Networks, 1992, v.5, pp.241-259.</li>
+		<li>С.А.Терехов. Гениальные комитеты умных машин. IX Всероссийская научно-техническая конференция "Нейроинформатика-2007": Лекции по нейроинформатике. Часть 2, с.11-42. М., МИФИ, 2007. Электронная версия находится <a href="http://alife.narod.ru/lectures/committee2007/committee2007.pdf">здесь</a>.</li>
+		<li>С.А.Доленко, Ю.В.Орлов, И.Г.Персианцев, Ю.С.Шугай. Адаптивное построение иерархических нейросетевых классификаторов. Нейрокомпьютеры: разработка, применение, 2005, №1-2, с.4-11.</li>
+		<li>И.Г.Персианцев. <a href="http://neurolectures.narod.ru/2010/Persiantsev-2010.pdf">Адаптивное построение иерархических нейросетевых систем для классификации и для сегментации временных рядов.</a> Научная сессия НИЯУ МИФИ-2010. XII Всероссийская научно-техническая конференция «Нейроинформатика-2010»: Лекции по нейроинформатике. М., НИЯУ МИФИ, 2010, с.212-242.</li>
+		<li>V.A.Svetlov, S.A.Dolenko. Development of the algorithm of adaptive construction of hierarchical neural network classifiers. Optical Memory and Neural Networks (Information Optics), 2017, V.26, No.1, p.40-46.</li>
+		<li>B.S.Everitt, S.Landau, M.Leese, D.Stahl. Cluster Analysis. 5th Edition. Wiley, 2011. ISBN 0470749911</li>
+		<li>C.Bouveyron, G.Celeux, T.B.Murphy, A.E.Raftery. Model-Based Clustering and Classification for Data Science: With Applications in R. Cambridge University Press, 2019. ISBN 110849420X.</li>
+	</ul>
+
+	<p>См. также общую литературу</p>
+
+	<p><u>Тема 6.2. Работа с нейронными сетями на языке Python на примере задач обработки изображений</u></p>
+
+	<ul>
+		<li>T.Rashid. Make Your Own Neural Network. A step-by-step gentle journey through the mathematics of neural networks, and making your own using the Python computer language. CreateSpace Independent Publishing Platform, 2016. ISBN 1530826608.</li>
+		<li>Перевод: Т.Рашид. Создаём нейронную сеть. Математические идеи, лежащие в основе нейронных сетей, и поэтапное создание собственной нейронной сети на языке Python. Вильямс, 2018. ISBN 978-1530826605.</li>
+		<li>F.Chollet. Deep Learning with Python. Manning Publications, 2017. ISBN 9781617294433.</li>
+		<li>Перевод: Ф.Шолле. Глубокое обучение на Python. Питер, 2018. ISBN 978-5-4461-0770-4.</li>
+		<li>S.Rashka, V.Mirjalili. Python Machine Learning: Machine Learning and Deep Learning with Python, scikit-learn, and TensorFlow. 2nd Edition. Packt Publishing, 2017. ISBN 9781787125933.</li>
+		<li>Перевод: С.Рашка, В.Мирджалили. Python и машинное обучение. Машинное и глубокое обучение с использованием Python, scikit-learn и TensorFlow. 2-е издание. Вильямс, 2019. ISBN 978-5-907114-52-4.</li>
+	</ul>
+
+	<p><u>Тема 6.3. Решение задач обработки текстовой информации</u></p>
+
+	<ul>
+		<li>S.Bird, E.Klein, E.Loper. Natural Language Processing with Python. Analyzing Text with the Natural Language Toolkit. O’Reilly Media, 2009.</li>
+		<li>B.Benfort, T.Ojeda, R.Bilbro. Applied Text Analysis with Python. Enabling Language-Aware Data Products with Machine Learning. O’Reilly Media, 2018.</li>
+		<li>Перевод: Б.Бенгфорт, Р.Билбро, Т.Охеда. Прикладной анализ текстовых данных на Python. Машинное обучение и создание приложений обработки естественного языка. Питер, 2019. ISBN 978-5-4461-1153-4.Я</li>
+	</ul>
+
+	<p><u>Тема 6.4. Обучение с подкреплением.</u></p>
+
+	<ul>
+		<li>R.Sutton, A.Barto. Reinforcement Learning: An Introduction. MIT Press, 1998.</li>
+		<li>L.Graesser, W.L.Keng. Foundations of Deep Reinforcement Learning: Theory and Practice in Python. Addison-Wesley Professional, 2019.</li>
+		<li>T.Beysolow II. Applied Reinforcement Learning with Python: With OpenAI Gym, Tensorflow, and Keras. Apress, 2019. ISBN 1484251261.</li>
+		<li>M.Lapan. Deep Reinforcement Learning Hands-On: Apply modern RL methods, with deep Q-networks, value iteration, policy gradients, TRPO, AlphaGo Zero and more. Packt Publishing, 2018. ISBN 1788834240.</li>
+	</ul>
+
+	<p><u>Тема 6.5. Решение обратных задач в физике с помощью ИНС и ГА</u></p>
+
+	<ul>
+		<li>А.Н. Тихонов, В.Я. Арсенин. Методы решения некорректных задач. М., Наука, 1979.</li>
+		<li><a href="http://www.ozon.ru/context/detail/id/4840965/?partner=neuroproject">А.С.Леонов. Решение некорректно поставленных обратных задач: Очерк теории, практические алгоритмы и демонстрации в МАТЛАБ. М., Книжный дом "Либроком", 2010.</a></li>
+		<li>В.И.Дмитриев. Обратные задачи геофизики. М., МАКС Пресс, 2012. ISBN 978-5-317-04151-9</li>
+		<li>T.A.Dolenko, I.V.Churina, V.V.Fadeev, and S.M.Glushkov. Valence band of liquid water Raman scattering: some peculiarities and applications in the diagnostics of water media. J. Raman Spectroscopy, 2000, v.31, p. 863-870.</li>
+		<li>И.В. Бойчук, Т.А. Доленко, А.Р. Сабиров, В.В. Фадеев, Е.М. Филиппова. Исследование единственности и устойчивости решения обратной задачи флуориметрии насыщения. Квантовая электроника, 2000, т.30, N7, с 611-616.</li>
+		<li>С.А.Доленко, И.В.Гердова, Т.А.Доленко, В.В.Фадеев. Лазерная флуориметрия смесей сложных органических соединений с использованием искусственных нейронных сетей. Квантовая электроника, 2001, т.31, N 9, стр.834-838.</li>
+		<li>T.A.Dolenko, V.V.Fadeev, I.V.Gerdova, S.A.Dolenko, and R.Reuter. Fluorescence Diagnostics of Oil Pollution in Coastal Marine Waters by Use of Artificial Neural Networks. Applied Optics, 2002, v.41, No.24, pp.5155-5166.</li>
+		<li>A.Tanaka, M.Kishino, T.Oishi, R.Doerffer, H.Schiller. Application of neural network method to case II water. In: Proc. SPIE, Remote Sensing of the Ocean and Sea Ice 2000 (Ed. C.R.Bostater, R.Santoleri), 2000, v.4172, pp. 144-152.</li>
+		<li>K.Hennig, T. de Vries, R.Paetzold, K.Jantos, E.Voss, A.Anders. Multi Sensor System for Fast Analyses in Environmental Monitoring with an Application in Waste Water Treatment. European Association of Remote Sensing Laboratories (EARSeL) eProceedings (Workshop on LIDAR on Land and Sea) Editor: R.Reuter. 2001, v. 1, pp.61-67.</li>
+		<li>S.Dolenko, A.Guzhva, E.Obornev, I.Persiantsev, M.Shimelevich. Comparison of Adaptive Algorithms for Significant Feature Selection in Neural Network Based Solution of the Inverse Problem of Electrical Prospecting. In: C.Alippi et al (Eds.): ICANN 2009, Part II. (Lecture Notes in Computer Science, 2009, V.5769, pp.397-405.) Springer-Verlag Berlin Heidelberg 2009.</li>
+		<li>S.A.Burikov, S.A.Dolenko, T.A.Dolenko, I.G.Persiantsev. Application of Artificial Neural Networks to Solve Problems of Identification and Determination of Concentration of Salts in Multi-Component Water Solutions by Raman spectra. Optical Memory and Neural Networks (Information Optics), 2010, V.19, No.2, pp.140-148.</li>
+		<li>S.Dolenko, T.Dolenko, S.Burikov, V.Fadeev, A.Sabirov, and I.Persiantsev. Comparison of Input Data Compression Methods in Neural Network Solution of Inverse Problem in Laser Raman Spectroscopy of Natural Waters. In: A.E.P. Villa et al. (Eds.): ICANN 2012, Part II. Lecture Notes in Computer Science, 2012, V.7553, pp.443-450.</li>
+		<li>S.Dolenko, I.Isaev, E.Obornev, I.Persiantsev, M.Shimelevich. <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-41013-0_9">Study of Influence of Parameter Grouping on the Error of Neural Network Solution of the Inverse Problem of Electrical Prospecting.</a> L.Iliadis, H.Papadopoulos, and C.Jayne (Eds.): EANN-2013, Part 1. Communications in Computer and Information Science (CCIS), 2013, V.383, pp.81-90.</li>
+		<li>С.А.Доленко, И.В.Исаев, Е.А.Оборнев, И.Г.Персианцев, М.И.Шимелевич. Сравнение методов нейросетевого решения многопараметрической обратной задачи магнитотеллурики. Известия ВУЗов. Геология и разведка, 2013, №5, с.47-52.</li>
+		<li>S.Dolenko, S.Burikov, T.Dolenko, A.Efitorov, K.Gushchin, I.Persiantsev. <a href="http://link.springer.com/chapter/10.1007%2F978-3-319-11179-7_101">Neural Network Approaches to Solution of the Inverse Problem of Identification and Determination of Partial Concentrations of Salts in Multi-сomponent Water Solutions.</a> S.Wermter et al. (Eds.): ICANN 2014. Lecture Notes in Computer Science (LNCS), 2014, V.8681, pp.805–812.</li>
+		<li>S.Dolenko, A.Efitorov, S.Burikov, T.Dolenko, K.Laptinskiy, and I.Persiantsev. <a href="http://link.springer.com/chapter/10.1007/978-3-319-23983-5_11">Neural Network Approaches to Solution of the Inverse Problem of Identification and Determination of the Ionic Composition of Multi-сomponent Water Solutions.</a> L.Iliadis and C.Jayne (Eds.): EANN 2015. Springer International Publishing Switzerland 2015. Communications in Computer and Information Science (CCIS), 2015, v.517, pp.109<span style="color:#FFFFFF;">-</span></li>
+		<li>I.Isaev, S.Dolenko. Comparative Analysis of Residual Minimization and Artificial Neural Networks as Methods of Solving Inverse Problems: Test on Model Data. A.V.Samsonovich, V.V.Klimov, G.V.Rybina, eds. Biologically Inspired Cognitive Architectures (BICA) for Young Scientists. Proceedings of the First International Early Research Career Enhancement School (FIERCES 2016). Springer, Advances in Intelligent Systems and Computing, V.449, pp.289-295.</li>
+		<li>I.V.Isaev, S.A.Dolenko. Training with noise as a method to increase noise resilience of neural network solution of inverse problems. Optical Memory and Neural Netwroks (Information Optics), 2016, V.25, No.3, pp. 142-148.</li>
+		<li>T.A.Dolenko, S.A.Burikov, E.N.Vervald, A.O.Efitorov, K.A.Laptinskiy, O.E.Sarmanova, S.A.Dolenko. Improvement of reliability of molecular DNA computing: solution of inverse problem of Raman spectroscopy using artificial neural networks. Laser Physics, 2017, V.27, No.2, p.025203-1-025203-8.</li>
+		<li>A.Efitorov, T.Dolenko, S.Burikov, K.Laptinskiy, S.Dolenko. Study of Efficiency of Dividing the Problem Space as a Means to Improve Solution of Multi-parameter Inverse Problem by Adaptive Methods. Procedia Computer Science, 2018, V.123, pp.122-127. DOI: 10.1016/j.procs.2018.01.020</li>
+		<li>I.Isaev, S.Dolenko. Group Determination of Parameters and Training with Noise Addition: Joint Application to Improve the Resilience of the Neural Network Solution of a Model Inverse Problem to Noise in Data. Advances in Intelligent Systems and Computing, 2019, V.848, pp.138-144. Springer, Cham. DOI: 10.1007/978-3-319-99316-4_18</li>
+		<li>I.Isaev, S.Burikov, T.Dolenko, K.Laptinskiy, S.Dolenko. Artificial Neural Networks for Diagnostics of Water-Ethanol Solutions by Raman Spectra. Studies in Computational Intelligence, 2019, V.799, pp.167-175. DOI: 10.1007/978-3-030-01328-8_18</li>
+	</ul>
+</div>
+    

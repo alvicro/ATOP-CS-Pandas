@@ -1,0 +1,56 @@
+/*.result {
+    width: 50vw;
+    height: 50vh;
+}*/
+
+/*.btn {
+    border: 1px solid black;
+    border-radius: 3px 3px;
+/*Для основных пунктов меню, набранных прописным шрифтом, определён цвет ТЁМНО-СИНИЙ */
+    /*color:rgb(55, 22, 133);font-family:"Arial",sans-serif;font-size:21px;font-weight:bold;
+    width: 37vw;*/
+
+.btn {
+    color: #fff; /*Белый цвет текста*/
+    background-color:#3f51b5; /*Синий цвет фона мнимой кнопки*/
+    font-family:”Arial”, sans-serif;
+    font-size:21px;
+    font-weight:bold;
+    width:37vw;
+    margin: 4px;
+    padding: 4px;
+}
+
+* { 
+    margin-left: 10 px;
+    margin-bottom: 4 px;
+   /* margin:  0; 
+    padding: 0; */
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* table */
+td, th {
+   /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+    /*<th style="width: 100px">*/
+    border-width: 1px 1px 0px 0px ;
+    border-style: solid;
+    border-color: rgb(117, 28, 225);
+    padding-right: 10px;
+    padding-left: 10px;
+    word-wrap: break-word;
+}
+.title {
+    color: #6c1313;font-family:"Arial",sans-serif;font-size:37px;font-weight:bold;
+}
+.hfT {color: rgb(5, 6, 5);font-family:"Arial",sans-serif;font-size:17px;font-weight:bold;}
+.xgT {color: rgb(5, 6, 5);font-family:"Arial",sans-serif;font-size:17px;font-weight:bold;}
+.PiT {color: rgb(5, 6, 5);font-family:"Arial",sans-serif;font-size:17px;font-weight:bold;}
+.tjT {color: rgb(5, 6, 5);font-family:"Arial",sans-serif;font-size:17px;font-weight:bold;}
+.hxPT {color: rgb(5, 6, 5);font-family:"Arial",sans-serif;font-size:17px;font-weight:bold;}
+.DNN {color: rgb(5, 6, 5);font-family:"Arial",sans-serif;font-size:17px;font-weight:bold;}
+.COURSES{color: rgb(5, 6, 5);font-family:"Arial",sans-serif;font-size:17px;font-weight:bold;}
+.NNinHYDROLOGY{color: rgb(5, 6, 5);font-family:"Arial",sans-serif;font-size:17px;font-weight:bold;}

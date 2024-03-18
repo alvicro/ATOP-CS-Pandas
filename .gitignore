@@ -1,2 +1,5 @@
 Pipfile.lock
-*.docx
+
+migrations
+*.bak
+__pycache__
